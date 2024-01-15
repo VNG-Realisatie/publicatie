@@ -1,5 +1,7 @@
 # Publiceren Respec documentatie (under construction)
 
+**Let op!** Deze repository niet hernoemen. Dat veroorzaakt dode links.
+
 Het is de bedoeling dat het publiceren van de statische html en pdf geautomatiseerd gaat verlopen. Dat hebben we helaas nog niet op orde en om die reden doen we dit voorlopig handmatig.
 
 Het publiceren van Respec documentatie gebeurd niet vanuit de GitHub repository waarin deze wordt samengesteld en gegenereerd. 
