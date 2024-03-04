@@ -479,7 +479,7 @@ In de bijlage <a href="#diagrammen">Diagrammen</a> vind je een aantal diagrammen
  </p>
 </section><section id="typering-van-modellen-en-scope-van-deze-standaard"><h3 id="x1-6-typering-van-modellen-en-scope-van-deze-standaard"><bdi class="secno">1.6 </bdi>Typering van modellen en scope van deze standaard</h3>
 <p>Bij het modelleren van een domein zijn er een aantal beschouwingsniveaus, variërend van een zo getrouw mogelijke beschrijving van de betekenis en bedoeling van de woorden en termen die mensen gebruiken als ze het ergens over hebben tot een specificatie van de wijze van registratie en uitwisseling van data. In het [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>] vind je een uitgebreide beschrijving van deze niveau’s.</p>
-<p>Een BSM is een extensie op het logisch informatie- of gegevensmodel (niveau 3) en is dus een model op niveau 4. Het modelleert de bericht-technische componenten benodigd voor de uitwisseling van de met het logisch informatie- of gegevensmodel gedefinieerde informatie en koppelt deze daaraan. Waar de objecten, kenmerken en eigenschappen in een logisch informatie- of gegevensmodel techniek onafhankelijk zijn geldt dat voor de componenten in een BSM slechts deels. De componenten in een BSM kunnen nog op allerlei manieren geserialiseerd worden maar tegelijkertijd wordt er bij de modellering van de bericht-technische componenten al voorgesorteerd op de wijze waarop de specificatie zal worden gegenereerd, bijv. OAS. De bericht-technische componenten hebben dus elk een tegenhanger in de specificaties. Het component ‘Padtype’ bijvoorbeeld is specifiek in het leven geroepen voor het definiëren van een OAS specificatie. En hoewel niet uitgesloten mag worden dat dit component ook bij andersoortige specificaties een rol heeft of gaat krijgen, had het bij het modelleren van StUF berichten nooit een functie. Ook de enumeratie voor de naam van de ‘EntiteitRelatie’ hangt natuurlijk erg sterk samen met REST API’s.</p>
+<p>Een BSM is een extensie op het logisch informatie- of gegevensmodel (niveau 3) en bevind zich ook op niveau 3. Het modelleert de bericht-technische componenten benodigd voor de uitwisseling van de met het logisch informatie- of gegevensmodel gedefinieerde informatie en koppelt deze daaraan. Waar de objecten, kenmerken en eigenschappen in een logisch informatie- of gegevensmodel techniek onafhankelijk zijn geldt dat voor de componenten in een BSM slechts deels. De componenten in een BSM kunnen nog op allerlei manieren geserialiseerd worden maar tegelijkertijd wordt er bij de modellering van de bericht-technische componenten al voorgesorteerd op de wijze waarop de specificatie zal worden gegenereerd, bijv. OAS. De bericht-technische componenten hebben dus elk een tegenhanger in de specificaties. Het component ‘Padtype’ bijvoorbeeld is specifiek in het leven geroepen voor het definiëren van een OAS specificatie. En hoewel niet uitgesloten mag worden dat dit component ook bij andersoortige specificaties een rol heeft of gaat krijgen, had het bij het modelleren van StUF berichten nooit een functie. Ook de enumeratie voor de naam van de ‘EntiteitRelatie’ hangt natuurlijk erg sterk samen met REST API’s.</p>
 <p>Een BSM kan, zoals hierboven reeds geschetst, geserialiseerd worden in verschillende soorten technische datamodellen en schema's (zoals XML, JSON of specifieke invullingen hiervan). Deze serialisaties zijn wat we in MBG niveau 4 noemen. De focus van het MBG ligt niet op dit niveau 4 en valt dan ook buiten scope. Wel staat het MBG een model-gedreven werkwijze voor waarbij de modellen van niveau 4 gegenereerd kunnen worden vanuit niveau 3.
 De aangegeven niveaus zijn vooral bedoeld om de scope van MBG duidelijk aan geven, te weten niveau 3.</p>
 </section><section id="wat-is-het-metamodel-voor-berichtstructuurmodellering"><h3 id="x1-7-wat-is-het-metamodel-voor-berichtstructuurmodellering"><bdi class="secno">1.7 </bdi>Wat is het metamodel voor Berichtstructuurmodellering</h3>
@@ -1761,7 +1761,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <li>waar het eigenlijk een naamswijziging betreft en de relatie met het metagegeven in het MIM erg voor de hand ligt;</li>
 <li>waar het stereotype waarvan het deel uitmaakt niet kan worden gemapt op een stereotype in het MIM.</li>
 </ul>
-<p>Daarnaast zijn de namen van de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes cursief en niet vet in de eerste kolom van dezelfde tabellen opgenomen. De andere kolommen zijn niet daar niet gevuld.</p>
+<p>Daarnaast zijn de namen van de metagegevens die wel voorkomen op de MIM stereotypes maar niet bij de gerelateerde MUG stereotypes cursief in de eerste kolom van dezelfde tabellen opgenomen. De andere kolommen zijn niet daar niet gevuld.</p>
 <section id="metagegevens-voor-basismodel"><h5 id="x5-2-2-1-metagegevens-voor-basismodel"><bdi class="secno">5.2.2.1 </bdi>Metagegevens voor «Basismodel»</h5>
 <p>Basismodel packages hebben de volgende aspecten gespecificeerd:</p>
 <table class="simple">
@@ -1775,7 +1775,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1796,7 +1796,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1810,7 +1810,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1824,63 +1824,63 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Informatie-model type</span></td>
+<td><em>Informatie-model type</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Informatie-domein</span></td>
+<td><em>Informatie-domein</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">MIM versie</span></td>
+<td><em>MIM versie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">MIM extensie</span></td>
+<td><em>MIM extensie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">MIM taal</span></td>
+<td><em>MIM taal</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Relatie-modellerings-type</span></td>
+<td><em>Relatie-modellerings-type</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Basis-URI</span></td>
+<td><em>Basis-URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1922,7 +1922,6 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 </tbody></table>
-
 </section><section id="metagegevens-voor-complex-datatype"><h5 id="x5-2-2-2-metagegevens-voor-complex-datatype"><bdi class="secno">5.2.2.2 </bdi>Metagegevens voor «Complex datatype»</h5>
 <p>Complex datatype classes hebben de volgende aspecten gespecificeerd:</p>
 <table class="simple">
@@ -1936,7 +1935,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1957,21 +1956,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1985,7 +1984,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1999,21 +1998,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Patroon</span></td>
+<td><em>Patroon</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Formeel patroon</span></td>
+<td><em>Formeel patroon</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2027,7 +2026,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>attribute</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2056,7 +2055,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2077,21 +2076,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2105,7 +2104,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2119,7 +2118,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2161,7 +2160,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Minimum waarde (exclusief)</span></td>
+<td><em>Minimum waarde (exclusief)</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2175,7 +2174,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Maximum waarde (exclusief)</span></td>
+<td><em>Maximum waarde (exclusief)</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2189,7 +2188,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>type = datatype</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2237,7 +2236,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2258,7 +2257,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2272,7 +2271,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2286,21 +2285,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Basis-URI</span></td>
+<td><em>Basis-URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2350,7 +2349,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2371,21 +2370,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2399,7 +2398,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2413,7 +2412,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2441,7 +2440,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Heeft tijdlijn geldigheid</span></td>
+<td><em>Heeft tijdlijn geldigheid</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2455,7 +2454,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Heeft tijdlijn registratie</span></td>
+<td><em>Heeft tijdlijn registratie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2483,7 +2482,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Indicatie classificerend</span></td>
+<td><em>Indicatie classificerend</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2511,7 +2510,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Minimum waarde exclusief</span></td>
+<td><em>Minimum waarde exclusief</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2525,14 +2524,14 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Maximum waarde exclusief</span></td>
+<td><em>Maximum waarde exclusief</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Eenheid</span></td>
+<td><em>Eenheid</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2546,14 +2545,14 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>type = datatype</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Indicatie afleidbaar</span></td>
+<td><em>Indicatie afleidbaar</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2608,7 +2607,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2629,21 +2628,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>0..1</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2657,7 +2656,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2678,28 +2677,28 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>isId bij element, --- of --- stereotype «isId» bij target role relatie --- of --- een combinatie van deze twee, elk hiervan meer keren toepasbaar</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Populatie</span></td>
+<td><em>Populatie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Kwaliteit</span></td>
+<td><em>Kwaliteit</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Indicatie abstract object</span></td>
+<td><em>Indicatie abstract object</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2741,7 +2740,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>association</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2775,7 +2774,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2796,21 +2795,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2824,7 +2823,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2838,14 +2837,14 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2872,7 +2871,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2893,21 +2892,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2921,7 +2920,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2935,14 +2934,14 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">bevat enumeratiewaarde</span></td>
+<td><em>bevat enumeratiewaarde</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2956,7 +2955,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>EnumerationLiteral</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2976,7 +2975,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -2997,7 +2996,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3011,7 +3010,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3025,28 +3024,28 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Locatie</span></td>
+<td><em>Locatie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Basis-URI</span></td>
+<td><em>Basis-URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3101,7 +3100,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3122,21 +3121,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3150,7 +3149,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3164,7 +3163,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3234,28 +3233,28 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Indicatie afleidbaar</span></td>
+<td><em>Indicatie afleidbaar</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Mogelijk geen waarde</span></td>
+<td><em>Mogelijk geen waarde</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td>verwijst naar <span class="not-relevant">relatiedoel</span></td>
+<td>verwijst naar _relatiedoel</td>
 <td>0..*</td>
 <td>Binding aan een entiteittype</td>
 <td>/target: related Element bij Relationship Element = UML-Class</td>
 <td><em>association target = Class</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3275,7 +3274,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3296,21 +3295,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3324,7 +3323,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3338,7 +3337,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3366,14 +3365,14 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>type = Class</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Eenheid</span></td>
+<td><em>Eenheid</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3421,7 +3420,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3442,21 +3441,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3470,7 +3469,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3484,7 +3483,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3498,7 +3497,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td>heeft <span class="not-relevant">Constraint</span></td>
+<td>heeft <em>Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3526,8 +3525,6 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 </tbody></table>
-
-
 </section><section id="metagegevens-voor-intern"><h5 id="x5-2-2-13-metagegevens-voor-intern"><bdi class="secno">5.2.2.13 </bdi>Metagegevens voor «Intern»</h5>
 <p>Interne packages hebben de volgende aspecten gespecificeerd:</p>
 <table class="simple">
@@ -3596,7 +3593,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3617,21 +3614,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3645,7 +3642,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3659,7 +3656,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3687,7 +3684,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3728,7 +3725,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3749,21 +3746,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3777,7 +3774,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3791,7 +3788,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3847,7 +3844,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>/source	Multiplicity van de source role</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft tijdlijn geldigheid</span></td>
+<td><em>heeft tijdlijn geldigheid</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3861,7 +3858,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft tijdlijn registratie</span></td>
+<td><em>heeft tijdlijn registratie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3903,7 +3900,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>association target = Class</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3951,7 +3948,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -3972,21 +3969,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4007,14 +4004,14 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4132,7 +4129,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4153,21 +4150,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4181,7 +4178,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4195,7 +4192,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4237,35 +4234,35 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>isID</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Minimumwaarde inclusief</span></td>
+<td><em>Minimumwaarde inclusief</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Minimumwaarde exclusief</span></td>
+<td><em>Minimumwaarde exclusief</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Maximumwaarde inclusief</span></td>
+<td><em>Maximumwaarde inclusief</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Maximumwaarde exclusief</span></td>
+<td><em>Maximumwaarde exclusief</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Eenheid</span></td>
+<td><em>Eenheid</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4306,7 +4303,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4327,21 +4324,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4355,7 +4352,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4369,14 +4366,14 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Locatie</span></td>
+<td><em>Locatie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4397,7 +4394,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>association</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4438,21 +4435,21 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Is gedefinieerd in</span></td>
+<td><em>Is gedefinieerd in</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Begrip</span></td>
+<td><em>Begrip</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4466,7 +4463,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4480,7 +4477,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4508,15 +4505,13 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>association</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 </tbody></table>
-
-
 </section><section id="metagegevens-voor-union-element"><h5 id="x5-2-2-20-metagegevens-voor-union-element"><bdi class="secno">5.2.2.20 </bdi>Metagegevens voor «Union element»</h5>
 <p>Union datatypes hebben de volgende aspecten gespecificeerd:</p>
 <table class="simple">
@@ -4599,7 +4594,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 </tr>
 </thead>
 <tbody><tr>
-<td><span class="not-relevant">URI</span></td>
+<td><em>URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4620,7 +4615,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Alias</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst</span></td>
+<td><em>Herkomst</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4634,7 +4629,7 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Notes</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Herkomst definitie</span></td>
+<td><em>Herkomst definitie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -4648,28 +4643,28 @@ Metagegevens die zijn toegevoegd t.o.v. het MIM 1.1.1 zijn rood gemaakt behalve 
 <td><em>Tagged value</em></td>
 </tr>
 <tr>
-<td><span class="not-relevant">Datum opname</span></td>
+<td><em>Datum opname</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Locatie</span></td>
+<td><em>Locatie</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">heeft Constraint</span></td>
+<td><em>heeft Constraint</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 </tr>
 <tr>
-<td><span class="not-relevant">Basis-URI</span></td>
+<td><em>Basis-URI</em></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -5395,7 +5390,7 @@ Als dit metagegeven van een waarde is voorzien moeten de metagegevens ‘Supplie
 </tr>
 </tbody></table>
 </section></section></section>
-      <section data-include-format="markdown" data-include="Versielog.md" data-include-id="include-6282563173932914" class="respec-offending-element" title="`data-include` failed: `Versielog.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-versielog-md-cannot-read-properties-of-null-reading-localname"></section>
+      <section data-include-format="markdown" data-include="Versielog.md" data-include-id="include-12626505200260252" class="respec-offending-element" title="`data-include` failed: `Versielog.md` (Cannot read properties of null (reading 'localName'))." id="respec-offender-data-include-failed-versielog-md-cannot-read-properties-of-null-reading-localname"></section>
     </section>
   <section id="tof"><h2 id="x6-lijst-met-figuren"><bdi class="secno">6. </bdi>Lijst met figuren</h2><ul class="tof">
         <li class="tofline">
