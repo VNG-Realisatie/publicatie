@@ -1,4 +1,4 @@
-# Conceptuele Informatiemodellen VNG Realisatie
+# Respec documentatie VNG Realisatie
 
 ## respec-template
 
