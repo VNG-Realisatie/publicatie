@@ -49,6 +49,16 @@ dfn{cursor:pointer}
   
 <link rel="shortcut icon" type="image/x-icon" href="https://vng-realisatie.github.io/VNG-R-Respec-Organization-configurations/media/logo-VNG-Realisatie.ico">
   
+  
+  
+<style>
+
+	.figure img,    .sidefigure img,    figure img,
+	.figure object, .sidefigure object, figure object {
+		max-width: none !important; 
+	}
+  
+</style>
 
 <style id="respec-mainstyle">
 @keyframes pop{
@@ -148,7 +158,7 @@ ul.index code{color:inherit}
     color: white;
     white-space: nowrap;
     z-index: 1;
-    background-color: #A569BD;
+    background-color: #DC7633;
   }
 </style>
 <script type="text/javascript">
@@ -175,7 +185,7 @@ ul.index code{color:inherit}
   "postProcess": [
     null
   ],
-  "pubDomain": "cim",
+  "pubDomain": "hr",
   "latestVersion": [
     "nl_organisationPublishURL",
     "pubDomain",
@@ -198,11 +208,10 @@ ul.index code{color:inherit}
     "/",
     "previousPublishVersion"
   ],
-  "edDraftURI": "",
   "useLogo": true,
   "useLabel": true,
   "license": "eupl",
-  "addSectionLinks": false,
+  "addSectionLinks": true,
   "localizationStrings": {
     "en": {
       "wv": "Draft",
@@ -252,6 +261,7 @@ ul.index code{color:inherit}
       "cv": "Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
       "vv": "Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "basis": "Dit is een document zonder officiële status.",
+      "ig": "Dit document is 'In Gebruik'.",
       "io": "Dit document is nog 'In Ontwikkeling'."
     },
     "en": {
@@ -261,6 +271,7 @@ ul.index code{color:inherit}
       "cv": "This is a proposed recommendation approved by TO. Comments regarding this document may be sent to ",
       "vv": "This is the definitive concept of this document. Edits resulting from consultations have been applied.",
       "basis": "This document has no official standing.",
+      "ig": "This document is 'In Use'.",
       "io": "This document is is still 'Under Development'."
     }
   },
@@ -301,15 +312,22 @@ ul.index code{color:inherit}
       "href": "https://docs.geostandaarden.nl/mim/mim/",
       "publisher": "Geonovum",
       "title": "MIM - Metamodel Informatie Modellering",
-      "date": "Oktober 2013",
+      "date": "Oktober 2023",
       "rawDate": "2023",
       "id": "mim"
+    },
+    "SemVer": {
+      "href": "https://semver.org/lang/nl/",
+      "title": "Semantisch Versioneren 2.0.0",
+      "date": "December 19, 2023",
+      "rawDate": "2023",
+      "id": "semver"
     }
   },
   "shortName": "Respec-template",
   "specType": "HR",
-  "specStatus": "IG",
-  "publishDate": "2024-1-10",
+  "specStatus": "IO",
+  "publishDate": "2024-4-12",
   "publishVersion": "0.1.0",
   "title": "Respec documentatie generatie",
   "subtitle": "Tevens een voorbeeld van een gegenereerd Respec document",
@@ -329,7 +347,7 @@ ul.index code{color:inherit}
   "alternateFormats": [
     {
       "label": "pdf",
-      "uri": "snapshot.pdf"
+      "uri": "Respec-bij-VNG-R.pdf"
     }
   ]
 }</script>
@@ -341,17 +359,17 @@ ul.index code{color:inherit}
     <h2 id="subtitle" class="subtitle">Tevens een voorbeeld van een gegenereerd Respec document</h2>
     <h2>
       VNG Realisatie Handreiking<br>
-      In Gebruik versie
-      <time class="dt-published" datetime="2024-01-10">10 januari 2024</time>
+      In Ontwikkeling versie
+      <time class="dt-published" datetime="2024-04-12">12 april 2024</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://vng-realisatie.github.io/publicatie/cim/respec-template/0.1.0">https://vng-realisatie.github.io/publicatie/cim/respec-template/0.1.0</a>
+              <a class="u-url status" href="https://vng-realisatie.github.io/publicatie/hr/respec-template/0.1.0">https://vng-realisatie.github.io/publicatie/hr/respec-template/0.1.0</a>
             </dd>
       <dt>Laatst gepubliceerde versie:</dt><dd>
-              <a href="https://vng-realisatie.github.io/publicatie/cim/respec-template">https://vng-realisatie.github.io/publicatie/cim/respec-template</a>
+              <a href="https://vng-realisatie.github.io/publicatie/hr/respec-template">https://vng-realisatie.github.io/publicatie/hr/respec-template</a>
             </dd>
-      
+      <dt>Laatste werkversie:</dt><dd><a href="https://vng-realisatie.github.io/VNG-R-Respec-Template/">https://vng-realisatie.github.io/VNG-R-Respec-Template/</a></dd>
       
       
       
@@ -377,7 +395,7 @@ ul.index code{color:inherit}
     
     <p>
           Dit document is ook beschikbaar in dit niet-normatieve formaat:
-          <a rel="alternate" href="snapshot.pdf">pdf</a>
+          <a rel="alternate" href="Respec-bij-VNG-R.pdf">pdf</a>
         </p>
     <p class="copyright">
           Dit document valt onder de volgende licentie: 
@@ -395,21 +413,28 @@ ul.index code{color:inherit}
 <li>De hoofdstukken volgend op hoofdstuk 5 hebben slechts een illustratieve functie. Op basis daarvan moet je, samen met de uitleg in hoofdstuk 3, in staat zijn de getoonde functionaliteit te gebruiken.</li>
 </ul>
 </section>
-  <section id="sotd" class="introductory"></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#rm"><bdi class="secno">1. </bdi>ReSpec template instructies</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vereiste-voor-gebruik"><bdi class="secno">1.1 </bdi>Vereiste voor gebruik</a></li><li class="tocline"><a class="tocxref" href="#gebruikersinstructie"><bdi class="secno">1.2 </bdi>Gebruikersinstructie</a></li><li class="tocline"><a class="tocxref" href="#rendering-automatische-controles-en-publicatie"><bdi class="secno">1.3 </bdi>Rendering, automatische controles en publicatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rendering"><bdi class="secno">1.3.1 </bdi>Rendering</a></li><li class="tocline"><a class="tocxref" href="#checken"><bdi class="secno">1.3.2 </bdi>Checken</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#gen"><bdi class="secno">2. </bdi>Respec documentatie generatie m.b.v. Imvertor</a></li><li class="tocline"><a class="tocxref" href="#assembl"><bdi class="secno">3. </bdi>Samenstellen Respec documentatie in GitHub (under construction)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#door-administrator-uit-te-voeren-acties"><bdi class="secno">3.1 </bdi>Door administrator uit te voeren acties</a></li><li class="tocline"><a class="tocxref" href="#door-repository-eigenaar-uit-te-voeren-acties"><bdi class="secno">3.2 </bdi>Door repository eigenaar uit te voeren acties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#imvertor-resultaat-plaatsen"><bdi class="secno">3.2.1 </bdi>Imvertor resultaat plaatsen</a></li><li class="tocline"><a class="tocxref" href="#de-content-van-het-respec-document-aanpassen"><bdi class="secno">3.2.2 </bdi>De content van het Respec document aanpassen</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-sotd"><bdi class="secno">3.2.3 </bdi>Secties met 'id' attribuutwaarde 'sotd'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-abstract"><bdi class="secno">3.2.4 </bdi>Secties met 'id' attribuutwaarde 'abstract'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-conformance"><bdi class="secno">3.2.5 </bdi>Secties met 'id' attribuutwaarde 'conformance'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-tof"><bdi class="secno">3.2.6 </bdi>Secties met 'id' attribuutwaarde 'tof'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-index"><bdi class="secno">3.2.7 </bdi>Secties met 'id' attribuutwaarde 'index'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-een-andere-id-attribuutwaarde"><bdi class="secno">3.2.8 </bdi>Secties met een andere 'id' attribuutwaarde</a></li><li class="tocline"><a class="tocxref" href="#secties-met-data-include-format-html"><bdi class="secno">3.2.9 </bdi>Secties met <code>data-include-format="html"</code></a></li><li class="tocline"><a class="tocxref" href="#andersoortige-secties"><bdi class="secno">3.2.10 </bdi>Andersoortige secties</a></li><li class="tocline"><a class="tocxref" href="#bijlage-n-referenties"><bdi class="secno">3.2.11 </bdi>Bijlage N Referenties</a></li><li class="tocline"><a class="tocxref" href="#images-in-de-documentatie"><bdi class="secno">3.2.12 </bdi>Images in de documentatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lokale-respec-configuratie-properties"><bdi class="secno">3.3 </bdi>Lokale Respec configuratie properties</a></li><li class="tocline"><a class="tocxref" href="#functie-respec-configuratie-properties"><bdi class="secno">3.4 </bdi>Functie Respec configuratie properties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#publ"><bdi class="secno">4. </bdi>Publiceren Respec documentatie (under construction)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inrichten-publicatie-repository"><bdi class="secno">4.1 </bdi>Inrichten publicatie repository</a></li><li class="tocline"><a class="tocxref" href="#publiceren-van-documenten"><bdi class="secno">4.2 </bdi>Publiceren van documenten</a></li></ol></li><li class="tocline"><a class="tocxref" href="#probl"><bdi class="secno">5. </bdi>Foutoplossing</a></li><li class="tocline"><a class="tocxref" href="#het-vng-r-respec-proces"><bdi class="secno">6. </bdi>Het VNG-R Respec proces</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">7. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">8. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">8.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">8.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">8.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">8.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">9. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">10. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
-  <section id="rm"><h2 id="x1-respec-template-instructies"><bdi class="secno">1. </bdi>ReSpec template instructies</h2>
-<p>ReSpec is een tool om html en pdf documenten te genereren op basis van markdown en html content.<br>Test.</p>
-<p>Organisatie administrators dienen de knop <a href="https://github.com/vng-realisatie/VNG-R-Respec-Template/generate"><em>Use this template</em></a> te gebruiken om een kopie van de template repository aan te maken. Deze kan daarna door jouzelf aangepast en uitgebreid worden.</p>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit document is nog 'In Ontwikkeling'.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#rm"><bdi class="secno">1. </bdi>ReSpec template instructies</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vereiste-voor-gebruik"><bdi class="secno">1.1 </bdi>Vereiste voor gebruik</a></li><li class="tocline"><a class="tocxref" href="#gebruikersinstructie"><bdi class="secno">1.2 </bdi>Gebruikersinstructie</a></li><li class="tocline"><a class="tocxref" href="#rendering-automatische-controles-en-publicatie"><bdi class="secno">1.3 </bdi>Rendering, automatische controles en publicatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rendering"><bdi class="secno">1.3.1 </bdi>Rendering</a></li><li class="tocline"><a class="tocxref" href="#checken"><bdi class="secno">1.3.2 </bdi>Checken</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#gen"><bdi class="secno">2. </bdi>Respec m.b.v. Imvertor</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#documentatie-generatie"><bdi class="secno">2.1 </bdi>Documentatie generatie</a></li><li class="tocline"><a class="tocxref" href="#diagrammen-als-clickable-images"><bdi class="secno">2.2 </bdi>Diagrammen als clickable images</a></li></ol></li><li class="tocline"><a class="tocxref" href="#assembl"><bdi class="secno">3. </bdi>Samenstellen Respec documentatie in GitHub (under construction)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#door-administrator-uit-te-voeren-acties"><bdi class="secno">3.1 </bdi>Door administrator uit te voeren acties</a></li><li class="tocline"><a class="tocxref" href="#door-repository-eigenaar-uit-te-voeren-acties"><bdi class="secno">3.2 </bdi>Door repository eigenaar uit te voeren acties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#imvertor-resultaat-plaatsen"><bdi class="secno">3.2.1 </bdi>Imvertor resultaat plaatsen</a></li><li class="tocline"><a class="tocxref" href="#de-content-van-het-respec-document-aanpassen"><bdi class="secno">3.2.2 </bdi>De content van het Respec document aanpassen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#content-methode"><bdi class="secno">3.2.2.1 </bdi>Content methode</a></li><li class="tocline"><a class="tocxref" href="#sectie-methode"><bdi class="secno">3.2.2.2 </bdi>Sectie methode</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-sotd"><bdi class="secno">3.2.2.3 </bdi>Secties met 'id' attribuutwaarde 'sotd'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-abstract"><bdi class="secno">3.2.2.4 </bdi>Secties met 'id' attribuutwaarde 'abstract'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-conformance"><bdi class="secno">3.2.2.5 </bdi>Secties met 'id' attribuutwaarde 'conformance'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-tof"><bdi class="secno">3.2.2.6 </bdi>Secties met 'id' attribuutwaarde 'tof'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-id-attribuutwaarde-index"><bdi class="secno">3.2.2.7 </bdi>Secties met 'id' attribuutwaarde 'index'</a></li><li class="tocline"><a class="tocxref" href="#secties-met-een-andere-id-attribuutwaarde"><bdi class="secno">3.2.2.8 </bdi>Secties met een andere 'id' attribuutwaarde</a></li><li class="tocline"><a class="tocxref" href="#secties-met-data-include-format-html"><bdi class="secno">3.2.2.9 </bdi>Secties met <code>data-include-format="html"</code></a></li><li class="tocline"><a class="tocxref" href="#andersoortige-secties"><bdi class="secno">3.2.2.10 </bdi>Andersoortige secties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bijlage-n-referenties"><bdi class="secno">3.2.3 </bdi>Bijlage N Referenties</a></li><li class="tocline"><a class="tocxref" href="#images-in-de-documentatie"><bdi class="secno">3.2.4 </bdi>Images in de documentatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lokale-respec-configuratie-properties"><bdi class="secno">3.3 </bdi>Lokale Respec configuratie properties</a></li><li class="tocline"><a class="tocxref" href="#functie-respec-configuratie-properties"><bdi class="secno">3.4 </bdi>Functie Respec configuratie properties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#publ"><bdi class="secno">4. </bdi>Publiceren Respec documentatie (under construction)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inrichten-publicatie-repository"><bdi class="secno">4.1 </bdi>Inrichten publicatie repository</a></li><li class="tocline"><a class="tocxref" href="#publiceren-van-documenten"><bdi class="secno">4.2 </bdi>Publiceren van documenten</a></li></ol></li><li class="tocline"><a class="tocxref" href="#probl"><bdi class="secno">5. </bdi>Foutoplossing</a></li><li class="tocline"><a class="tocxref" href="#het-vng-r-respec-proces"><bdi class="secno">6. </bdi>Het VNG-R Respec proces</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">7. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">8. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">8.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">8.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">8.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">8.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">9. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">10. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <section id="rm"><div class="header-wrapper"><h2 id="x1-respec-template-instructies"><bdi class="secno">1. </bdi>ReSpec template instructies</h2><a class="self-link" href="#rm" aria-label="Permalink for Section 1."></a></div>
+<p>ReSpec is een tool om html en pdf documenten te genereren op basis van markdown en html content.</p>
+<p>Organisatie administrators dienen de knop <a href="https://github.com/vng-realisatie/VNG-R-Respec-Template/generate"><em>Use this template</em></a> te gebruiken om een kopie van de template repository aan te maken. Deze kan daarna door jouzelf aangepast en uitgebreid worden.
+Dit template is afgeleid van het <a href="https://github.com/Logius-standaarden/respec-template">Logius Respec template</a> maar is op enkele details aangepast:</p>
+<ul>
+<li>Het organisation configuration bestand is in een <a href="https://github.com/VNG-Realisatie/VNG-R-Respec-Organization-configurations">aparte repository</a> ondergebracht;</li>
+<li>Het lokale configuratie bestand is aangepast aan de behoeftes van VNG Realisatie;</li>
+<li>In de 'index.html' is een style element aangebracht waarmee de standaard instelling van de 'max-width' property op 'none' is gesteld;</li>
+<li>De uitleg van de toepassing van het VNG-R Respec profiel is als inhoud aan deze repository toegevoegd.</li>
+</ul>
 <p>De dynamische pagina van het template document is <a href="https://vng-realisatie.github.io/VNG-R-Respec-Template/">hier</a> te zien.</p>
 <p>Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren. Deze workflows worden 
 automatisch gerund zodra er een aanpassing gedaan wordt aan de main branch.  Een beschrijving van deze acties vind je onderaan dit hoofdstuk.</p>
-<section id="vereiste-voor-gebruik"><h3 id="x1-1-vereiste-voor-gebruik"><bdi class="secno">1.1 </bdi>Vereiste voor gebruik</h3>
+<section id="vereiste-voor-gebruik"><div class="header-wrapper"><h3 id="x1-1-vereiste-voor-gebruik"><bdi class="secno">1.1 </bdi>Vereiste voor gebruik</h3><a class="self-link" href="#vereiste-voor-gebruik" aria-label="Permalink for Section 1.1"></a></div>
 <ul>
 <li>Kennis van git/GitHub</li>
 <li>Kennis van Markdown en/of HTML</li>
 <li>Een webserver om de documentatie te hosten</li>
 </ul>
 <p>Voor de laatste gebruiken wij GitHub. Kennis van de vorm van een Javascript object is handig om de in dit template voorkomende scripts aan te kunnen passen maar zonder die kennis kom je m.b.v. deze documentatie ook al heel ver.</p>
-</section><section id="gebruikersinstructie"><h3 id="x1-2-gebruikersinstructie"><bdi class="secno">1.2 </bdi>Gebruikersinstructie</h3>
+</section><section id="gebruikersinstructie"><div class="header-wrapper"><h3 id="x1-2-gebruikersinstructie"><bdi class="secno">1.2 </bdi>Gebruikersinstructie</h3><a class="self-link" href="#gebruikersinstructie" aria-label="Permalink for Section 1.2"></a></div>
 <p>Om het gebruik van dit template makkelijker te maken raden we het aan om een IDE te gebruiken. Die geeft een voorbeeld van hoe de markdown eruit zal zien, kan laten zien of de config files nog in de correcte vorm zijn en kan helpen in het gebruik van git.<br>Een gratis voorbeeld van een IDE is: <a href="https://code.visualstudio.com/">Visual studio code</a>. Een combinatie van GitHub desktop en je eigen favoriete Markdown editor is echter ook mogelijk.</p>
 <p>Aanpassingen maken aan het document gaat op 2 manieren:</p>
 <ul>
@@ -426,7 +451,7 @@ zullen zelden veranderen zoals bijv. de naam van de organisatie. </p>
 <p>Beide configuratie bestanden worden gelinkt in de <code>index.html</code> file waardoor ze beide bij het renderen van de Respec documentatie automatisch worden samengevoegd. Daardoor zijn de organisatie specifieke configuraties over alle Respec documentatie van VNG-R gelijk en
 hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. </p>
 <p>In <a href="https://vng-realisatie.github.io/VNG-R-Respec-Template/#wow">het volgende hoofdstuk</a> staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.</p>
-</section><section id="rendering-automatische-controles-en-publicatie"><h3 id="x1-3-rendering-automatische-controles-en-publicatie"><bdi class="secno">1.3 </bdi>Rendering, automatische controles en publicatie</h3>
+</section><section id="rendering-automatische-controles-en-publicatie"><div class="header-wrapper"><h3 id="x1-3-rendering-automatische-controles-en-publicatie"><bdi class="secno">1.3 </bdi>Rendering, automatische controles en publicatie</h3><a class="self-link" href="#rendering-automatische-controles-en-publicatie" aria-label="Permalink for Section 1.3"></a></div>
 <p>Het bestand '.github/workflows/build.yml' bevat een action script waarmee automatisch een drietal acties worden uitgevoerd nadat een bestand in de repository wordt gewijzigd, toegevoegd of verwijderd:</p>
 <ul>
 <li>het renderen van het Respec document;</li>
@@ -435,7 +460,7 @@ hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat
 </ul>
 <p>We beschrijven de eerste 2 acties in het kort hieronder. Aangezien we de laatste actie nog niet werkende hebben wordt deze voorlopig nog handmatig uitgevoerd, dat beschrijven we in hoofdstuk 4. 
 De log van deze acties is te vinden in het tabblad <code>Actions</code> in de GitHub repository.</p>
-<section id="rendering"><h4 id="x1-3-1-rendering"><bdi class="secno">1.3.1 </bdi>Rendering</h4>
+<section id="rendering"><div class="header-wrapper"><h4 id="x1-3-1-rendering"><bdi class="secno">1.3.1 </bdi>Rendering</h4><a class="self-link" href="#rendering" aria-label="Permalink for Section 1.3.1"></a></div>
 <p>Deze actie start het renderen van de Respec html. Vervolgens wordt er op basis daarvan een statische html en een pdf bestand gegenereerd. Die gebruiken we uiteindelijk om te publiceren.</p>
 <p>De PDF-versie wordt aangemaakt omdat de property <code>alternateFormats</code> in de organisation_config als volgt geconfigureerd staat:</p>
 <pre><code class="js hljs" aria-busy="false">alternateFormats: [
@@ -446,7 +471,7 @@ De log van deze acties is te vinden in het tabblad <code>Actions</code> in de Gi
 ]
 </code></pre>
 <p>Er moet nog worden bepaald of we de document eigenaar zelf willen laten bepalen of hij/zij een pdf wil genereren. Indien we dat willen verhuisd deze property naar de document_config. De waarde van de property <code>uri</code> kan dan naar wens worden aangepast.</p>
-</section><section id="checken"><h4 id="x1-3-2-checken"><bdi class="secno">1.3.2 </bdi>Checken</h4>
+</section><section id="checken"><div class="header-wrapper"><h4 id="x1-3-2-checken"><bdi class="secno">1.3.2 </bdi>Checken</h4><a class="self-link" href="#checken" aria-label="Permalink for Section 1.3.2"></a></div>
 <p>Na het renderen van de Respec html en pdf worden er via github actions 2 controles uitgevoerd op de html:  </p>
 <ul>
 <li><p>een WCAG-check (Web Content Accessibility Guidelines), deze guidelines gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid van webapplicaties verbeterd voor zowel verschillende apparaten  als voor mensen met een beperking. Ook wordt de validiteit van het HTML bestand gecheckt, bijv.:</p>
@@ -501,7 +526,8 @@ De voorgaande versie van het te publiceren Respec document. Komt overeen met de 
 <li>Als de parameter 'publishVersion' niet bestaat dan kan 'thisVersion' niet bepaald worden en wordt 'Deze versie' niet gegenereerd.</li>
 </ul>
 </section></section></section>
-  <section id="gen"><h2 id="x2-respec-documentatie-generatie-m-b-v-imvertor"><bdi class="secno">2. </bdi>Respec documentatie generatie m.b.v. Imvertor</h2>
+  <section id="gen"><div class="header-wrapper"><h2 id="x2-respec-m-b-v-imvertor"><bdi class="secno">2. </bdi>Respec m.b.v. Imvertor</h2><a class="self-link" href="#gen" aria-label="Permalink for Section 2."></a></div>
+<section id="documentatie-generatie"><div class="header-wrapper"><h3 id="x2-1-documentatie-generatie"><bdi class="secno">2.1 </bdi>Documentatie generatie</h3><a class="self-link" href="#documentatie-generatie" aria-label="Permalink for Section 2.1"></a></div>
 <p>Het is mogelijk om met Imvertor Respec documentatie te genereren van een model. Voorwaarde is wel dat het model MIM compliant is. Bij het genereren spelen de volgende Imvertor configuratieproperties (<b>LET OP!</b> Dus niet een van de Respec property bestanden) een rol:</p>
 <table class="simple">
 <thead>
@@ -531,21 +557,40 @@ De voorgaande versie van het te publiceren Respec document. Komt overeen met de 
 <td>respec, msword</td>
 <td>Definieert het type te genereren document. Een Respec html document of een MsWord html variant.</td>
 </tr>
-<tr>
-<td>createimagemap</td>
-<td>yes, no</td>
-<td>Definieert of van de Diagrammen een imagemap moet worden gegenereerd. De default is 'yes'.</td>
-</tr>
 </tbody></table>
 <p>Voor het genereren van Respec documentatie is het essentieel om in je lokale Imvertor property bestand de property 'createofficevariant' de waarde 'respec' te geven. Normaliter zal je dan ook de property 'createofficemode' de waarde 'click' geven.
 Dit resulteert er in dat in de folder 'app/cat' 2 Respec bestanden geplaatst, 1 in html en de ander in xhtml.</p>
-</section>
-  <section id="assembl"><h2 id="x3-samenstellen-respec-documentatie-in-github-under-construction"><bdi class="secno">3. </bdi>Samenstellen Respec documentatie in GitHub (under construction)</h2>
+</section><section id="diagrammen-als-clickable-images"><div class="header-wrapper"><h3 id="x2-2-diagrammen-als-clickable-images"><bdi class="secno">2.2 </bdi>Diagrammen als clickable images</h3><a class="self-link" href="#diagrammen-als-clickable-images" aria-label="Permalink for Section 2.2"></a></div>
+<p>Standaard zet Imvertor alle in Enterprise Architect gedefinieerde diagrammen om naar PNG images. Deze images worden echter niet als <code>img</code> elementen opgenomen in de gegenereerde (x)html. Indien dat gewenst is dan zul je ze zelf moeten opnemen. Het is echter wel mogelijk om deze diagrammen automatisch als clickable images in de gegenereerde (x)html op te nemen. Om dat te kunnen doen moet wel aan een aantal voorwaarden worden voldaan.</p>
+<ol>
+<li>Alleen diagrammen die geplaatst zijn in de root folder (Stereotype = 'Basismodel') of in de folder waarin (de folder met) de componenten staan worden daarbij meegenomen;</li>
+<li>De diagrammen moeten class diagrams zijn;</li>
+<li>De naam van de diagrammen moet als suffix <code>- overzicht</code> of <code>- detail</code> hebben;</li>
+</ol>
+<p>Tenslotte is de onderstaande Imvertor configuratieproperty nog van belang.</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Configuratieproperty</th>
+<th>Mogelijke waarden</th>
+<th>Uitleg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>createimagemap</td>
+<td>yes, no</td>
+<td>Definieert of van de Diagrammen een imagemap moet worden gegenereerd en of de gegenereerde PNG images als <code>img</code> element in de (x)html images worden opgenomen. De default is 'yes'.</td>
+</tr>
+</tbody></table>
+<p>Als deze de waarde 'yes' heeft of niet geconfigureerd is worden er in de (x)html bestanden <code>img</code> elementen met referenties naar de juiste images en imagemap elementen opgenomen.</p>
+<p><strong>LET OP!</strong> Maak de in Respec op te nemen diagrammen zoveel a;s mogelijk in portrait mode op. Dat voorkomt dat je nodeloos diep op het Respec document moet inzoomen.</p>
+</section></section>
+  <section id="assembl"><div class="header-wrapper"><h2 id="x3-samenstellen-respec-documentatie-in-github-under-construction"><bdi class="secno">3. </bdi>Samenstellen Respec documentatie in GitHub (under construction)</h2><a class="self-link" href="#assembl" aria-label="Permalink for Section 3."></a></div>
 <p>De acties die in het voorgaande hoofdstuk staan beschreven leveren een html bestand voor de Respec documentatie op waarin een informatiemodel wordt beschreven. Respec documentatie hoeft echter niet persé over informatiemodellen te gaan, voor de Respec documentatie die je nu leest is dat immers ook niet het geval. Het resultaat van het voorgaande hoofdstuk kan samen met andere html of markdown bestanden worden gebundeld tot de Respec documentatie. Daarnaast wordt een deel van de content van de Respec documentatie door het Respec framework in GitHub gegenereerd a.d.h.v. een aantal variabelen. Dat framework  verzorgt daarnaast ook de vormgeving dat essentieel is voor de Respec documentatie.</p>
 <p>Binnen VNG-R maken we gebruik van een door Logius vervaardigde extensie op het W3C Respec framework. We volgen daarbij andere organisaties in Nederland die hetzelfde doen zoals Geonovum. Van het door Logius beschikbaar gestelde template is een VNG-R versie beschikbaar binnen de VNG-Realisatie GitHub organisatie. Dat geeft de mogelijkheid om te verwijzen naar een VNG-R Respec configuratie waardoor we specifiek voor VNG-Realisatie geldende configuraties, zoals bijv. het VNG-Realisatie logo, kunnen aanbrengen. Deze vind je in de repository 'Respec-Organization-configurations'.
 Het template zelf kan echter door eenieder worden gebruikt om de eigen Respec documentatie te vervaardigen en daarbinnen bestaan nog mogelijkheden om jouw Respec documentatie een invulling tintje te geven.</p>
-<p>Hieronder wordt de werkwijze beschreven waarbij de 7 in de volgende paragraaf beschreven stappen moeten worden uitgevoerd door een GitHub organisatie administrator. Voorzie hem daarvoor van de gewenste respository naam.</p>
-<section id="door-administrator-uit-te-voeren-acties"><h3 id="x3-1-door-administrator-uit-te-voeren-acties"><bdi class="secno">3.1 </bdi>Door administrator uit te voeren acties</h3>
+<p>Hieronder wordt de werkwijze beschreven waarbij de 8 in de volgende paragraaf beschreven stappen moeten worden uitgevoerd door een GitHub organisatie administrator. Voorzie hem daarvoor van de gewenste respository naam.</p>
+<section id="door-administrator-uit-te-voeren-acties"><div class="header-wrapper"><h3 id="x3-1-door-administrator-uit-te-voeren-acties"><bdi class="secno">3.1 </bdi>Door administrator uit te voeren acties</h3><a class="self-link" href="#door-administrator-uit-te-voeren-acties" aria-label="Permalink for Section 3.1"></a></div>
 <ol>
 <li>Open het <a href="https://github.com/vng-realisatie/VNG-R-Respec-Template">VNG-R Respec template</a> en klik in de README op die pagina op de link 'Use this template';</li>
 <li>Je komt nu in het menu om een nieuwe repository aan te maken waarbij al een aantal velden zijn ingevuld. De te maken repository mag niet private zijn want dat maakt het gebruik van GitHub Pages onmogelijk. Geef de van de aanvrager verkregen repository naam in en klik op 'Create repository';</li>
@@ -560,21 +605,22 @@ Het template zelf kan echter door eenieder worden gebruikt om de eigen Respec do
 <li>Kies daar waar bij Branch 'None' staat voor 'main' en klik op 'Save';</li>
 <li>Nadat de build en deployment is uitgevoerd ga je naar het 'Code' tabblad, klikt daar op het tandwieltje bij 'About' en klikt op de checkbox naast 'Use your GitHub Pages website'. Klikken op de resulterende link onder 'About' brengt je naar de standaard gegenereerde Respec documentatie die nu kan worden aangepast door de eigenaar van de repository;</li>
 </ol>
-</section><section id="door-repository-eigenaar-uit-te-voeren-acties"><h3 id="x3-2-door-repository-eigenaar-uit-te-voeren-acties"><bdi class="secno">3.2 </bdi>Door repository eigenaar uit te voeren acties</h3>
+</section><section id="door-repository-eigenaar-uit-te-voeren-acties"><div class="header-wrapper"><h3 id="x3-2-door-repository-eigenaar-uit-te-voeren-acties"><bdi class="secno">3.2 </bdi>Door repository eigenaar uit te voeren acties</h3><a class="self-link" href="#door-repository-eigenaar-uit-te-voeren-acties" aria-label="Permalink for Section 3.2"></a></div>
 <p>Je beschikt nu over een repository die je kunt gaan vullen en waarin je je persoonlijke configuratie properties van een waarde kunt voorzien. Indien je een met Imvertor gegenereerd Respec html bestand wil gebruiken dan volg je de beschrijving van de volgende paragraaf, zo niet dan ga je direct naar de daarop volgende paragraaf.</p>
-<section id="imvertor-resultaat-plaatsen"><h4 id="x3-2-1-imvertor-resultaat-plaatsen"><bdi class="secno">3.2.1 </bdi>Imvertor resultaat plaatsen</h4>
-<p>Plaats het met Imvertor gegenereerde bestand in de root van de repository. Van dat bestand gebruiken we alleen de 'section' met het id 'cat'. Verwijder alle andere content behalve de processing instruction 'DOCTYPE HTML' aan het begin van dit bestand en commit het bestand.
+<section id="imvertor-resultaat-plaatsen"><div class="header-wrapper"><h4 id="x3-2-1-imvertor-resultaat-plaatsen"><bdi class="secno">3.2.1 </bdi>Imvertor resultaat plaatsen</h4><a class="self-link" href="#imvertor-resultaat-plaatsen" aria-label="Permalink for Section 3.2.1"></a></div>
+<p>Plaats het met Imvertor gegenereerde bestand in de root van de repository. Van dat bestand gebruiken we alleen de inhoud van het 'section' element met het id 'cat'. Het section element zelf gebruiken we dus niet. Verwijder alle andere content behalve de processing instruction 'DOCTYPE HTML' aan het begin van dit bestand en commit het bestand.
 Open vervolgens het bestand 'index.html' en plaats daarin op de gewenste locatie het volgende html fragment:<br><br>
    <code>&lt;section id="XXXX" data-include-format="html" data-include="XXXX.html"&gt;&lt;/section&gt;</code><br><br>
 Waarbij je 'XXXX.html' vervangt door de naam van het zojuist aangepaste bestand en 'XXXX' door een id dat de sectie duidelijk en uniek identificeert.</p>
-</section><section id="de-content-van-het-respec-document-aanpassen"><h4 id="x3-2-2-de-content-van-het-respec-document-aanpassen"><bdi class="secno">3.2.2 </bdi>De content van het Respec document aanpassen</h4>
+</section><section id="de-content-van-het-respec-document-aanpassen"><div class="header-wrapper"><h4 id="x3-2-2-de-content-van-het-respec-document-aanpassen"><bdi class="secno">3.2.2 </bdi>De content van het Respec document aanpassen</h4><a class="self-link" href="#de-content-van-het-respec-document-aanpassen" aria-label="Permalink for Section 3.2.2"></a></div>
 <p>Een Respec document kan op 2 verschillende manier van content worden voorzien:</p>
 <ul>
-<li>m.b.v. de 'content' configuratie property;</li>
 <li>door de 'sectie' elementen aan het 'index.html' bestand toe te voegen.</li>
+<li>m.b.v. de 'content' configuratie property;</li>
 </ul>
-<p>Beide methodes kunnen elkaar aanvullen en kennen eigen functionaliteiten.</p>
+<p>Beide methodes kunnen naast elkaar worden gebruikt. Advies is echter omn de eerste methode te gebruiken. Deze is transparanter omdat met 1 blik op het index.html bestand te zien is wat er in wordt opgenomen.</p>
 <p>Het Respec document zoals dat van het VNG-R Respec template is overgenomen moet nog aangepast worden. Deels kan dat door in de 'index.html' secties aan te passen danwel te vervangen en deels door de configuration property 'content' aan te passen.  </p>
+<section id="content-methode"><div class="header-wrapper"><h5 id="x3-2-2-1-content-methode"><bdi class="secno">3.2.2.1 </bdi>Content methode</h5><a class="self-link" href="#content-methode" aria-label="Permalink for Section 3.2.2.1"></a></div>
 <p>M.b.v. de 'content' configuratie property kunnen alleen secties waarvan de content in markdown bestanden staat worden toegevoegd. In deze property kan per bestand worden aangegeven of die sectie informatief is. Is dat het geval dan wordt automatisch de tekst <code>Dit onderdeel is niet normatief.</code> aan het hoofdstuk toegevoegd.
 Het toevoegen van bestanden aan de 'content' configuratie property doe je door de naam van het bestand (zonder de extensie) en een eventueel relevante CSS class in de property te plaatsen.
 De volgorde van bestanden binnen <code>content</code> bepaalt de volgorde in het resulterende document.</p>
@@ -588,141 +634,124 @@ De volgorde van bestanden binnen <code>content</code> bepaalt de volgorde in het
 <p>Het gebruik van de 'content' properties is niet verplicht, er mag voor worden gekozen nieuwe content alleen toe te voegen door het 'index.html' bestand aan te passen. De 'content' property moet dan wel uit het lokale 'js/config.js' bestand worden verwijderd of worden uitbecommentarieerd. Ook kan de plaats waar de in 'content' gedefinieerde hoofdstukken moeten worden toegevoegd worden aangepast. Zorg er dan voor dat het 'section' element waarna je die chapters wil toevoegen een 'id' attribuut met een waarde heeft en wijzig in het script in 'index.html' de regel</p>
 <p><code>document.getElementById("id-van-sectie").insertAdjacentHTML('afterend', content);</code></p>
 <p>zodanig dat de waarde 'id-van-sectie' de waarde van het id heeft.</p>
+</section><section id="sectie-methode"><div class="header-wrapper"><h5 id="x3-2-2-2-sectie-methode"><bdi class="secno">3.2.2.2 </bdi>Sectie methode</h5><a class="self-link" href="#sectie-methode" aria-label="Permalink for Section 3.2.2.2"></a></div>
 <p>In tegenstelling tot de methode met de 'content' configuratie property kunnen aan het 'index.html' bestand zowel 'sectie' elementen worden toegevoegd waarvan de content uit markdown bestaat als 'sectie' elementen waarvan de content uit html bestaat. Aangezien het gegenereerde Respec bestand een html bestand is kunnen we het alleen toevoegen aan het Respec document door een 'sectie' element toe te voegen aan het index.html bestand.</p>
 <p>Bij de methode met de 'section' elementen maken we nog verschil tussen 'sectie' elementen met specifieke waarden voor het 'id' attribuut en 'sectie' elementen die andere waarden voor dat 'id' attribuut hebben of die zelfs helemaal geen 'id' attribuut hebben.</p>
 <p>In de onderstaande paragrafen volgt per sectie een toelichting.</p>
-</section><section id="secties-met-id-attribuutwaarde-sotd"><h4 id="x3-2-3-secties-met-id-attribuutwaarde-sotd"><bdi class="secno">3.2.3 </bdi>Secties met 'id' attribuutwaarde 'sotd'</h4>
+</section><section id="secties-met-id-attribuutwaarde-sotd"><div class="header-wrapper"><h5 id="x3-2-2-3-secties-met-id-attribuutwaarde-sotd"><bdi class="secno">3.2.2.3 </bdi>Secties met 'id' attribuutwaarde 'sotd'</h5><a class="self-link" href="#secties-met-id-attribuutwaarde-sotd" aria-label="Permalink for Section 3.2.2.3"></a></div>
 <p>Toe te voegen m.b.v. <code>&lt;section id="sotd"&gt;&lt;/section&gt;</code>. Leidt ertoe dat het hoofdstuk met de titel 'Status van het document' wordt toegevoegd met als inhoud de, van de waarde van de configuration property 'specStatus' afhankelijke, content van de configuration property 'sotdText'.</p>
 <p>Tevens wordt een TOC gegenereerd waarin de titels (incl. evt. hoofdstuk en paragraafnummers) van alle, in het document opgenomen, hoofdstukken en paragrafen worden opgenomen afhankelijk van de configuratie property 'maxTocLevel'. Ook de titels van 'sectie' elementen zonder 'id' attribuut worden daar opgenomen.</p>
 <p>Indien de configuration property 'content' bestaat dan worden de daarin gedefinieerde markdown bestanden na de 'sotd' sectie opgenomen.
 Zo niet dan worden de in de 'content' configuratie property gedefinieerde secties ook niet toegevoegd en wordt er ook geen TOC gegenereerd.</p>
-</section><section id="secties-met-id-attribuutwaarde-abstract"><h4 id="x3-2-4-secties-met-id-attribuutwaarde-abstract"><bdi class="secno">3.2.4 </bdi>Secties met 'id' attribuutwaarde 'abstract'</h4>
+</section><section id="secties-met-id-attribuutwaarde-abstract"><div class="header-wrapper"><h5 id="x3-2-2-4-secties-met-id-attribuutwaarde-abstract"><bdi class="secno">3.2.2.4 </bdi>Secties met 'id' attribuutwaarde 'abstract'</h5><a class="self-link" href="#secties-met-id-attribuutwaarde-abstract" aria-label="Permalink for Section 3.2.2.4"></a></div>
 <p>Indien de sectie wordt toegevoegd met <code>&lt;sectie id="abstract" data-include-format="markdown" data-include="filenaam.md"&gt;</code> dan krijgt het hoofdstuk de titel Samenvatting zonder hoofdstuknr. als inhoud wordt de inhoud van het bestand 'filenaam.md' toegevoegd.</p>
-</section><section id="secties-met-id-attribuutwaarde-conformance"><h4 id="x3-2-5-secties-met-id-attribuutwaarde-conformance"><bdi class="secno">3.2.5 </bdi>Secties met 'id' attribuutwaarde 'conformance'</h4>
+</section><section id="secties-met-id-attribuutwaarde-conformance"><div class="header-wrapper"><h5 id="x3-2-2-5-secties-met-id-attribuutwaarde-conformance"><bdi class="secno">3.2.2.5 </bdi>Secties met 'id' attribuutwaarde 'conformance'</h5><a class="self-link" href="#secties-met-id-attribuutwaarde-conformance" aria-label="Permalink for Section 3.2.2.5"></a></div>
 <p>Door <code>&lt;section id='conformance'&gt;&lt;/section&gt;</code> wordt een hoofdstuk met als titel 'Conformiteit' toegevoegd. </p>
 <p>De inhoud komt waarschijnlijk uit <a href="https://github.com/Logius-standaarden/respec">https://github.com/Logius-standaarden/respec</a>. Het is nog niet duidelijk hoe dit hoofdstuk zijn inhoud krijgt.</p>
-</section><section id="secties-met-id-attribuutwaarde-tof"><h4 id="x3-2-6-secties-met-id-attribuutwaarde-tof"><bdi class="secno">3.2.6 </bdi>Secties met 'id' attribuutwaarde 'tof'</h4>
+</section><section id="secties-met-id-attribuutwaarde-tof"><div class="header-wrapper"><h5 id="x3-2-2-6-secties-met-id-attribuutwaarde-tof"><bdi class="secno">3.2.2.6 </bdi>Secties met 'id' attribuutwaarde 'tof'</h5><a class="self-link" href="#secties-met-id-attribuutwaarde-tof" aria-label="Permalink for Section 3.2.2.6"></a></div>
 <p><code>&lt;section id='tof'&gt;&lt;/section&gt;</code> genereert een hoofdstuk met als titel 'Lijst met Figuren' als er in minimaal een van de opgenomen bestanden minimaal een html 'figure' element met een 'figcaption' element is opgenomen of een markdown equivalent daarvan ( '![Tekstueel alternatief voor toegankelijkheid](pad naar iluustratie bestand "Onderschrift")' ). In de markdown variant mag het onderschrift ontbreken.</p>
 <p>De titel komt waarschijnlijk uit <a href="https://github.com/Logius-standaarden/respec">https://github.com/Logius-standaarden/respec</a>. Het is nog niet duidelijk hoe die titel wordt toegekend.</p>
-</section><section id="secties-met-id-attribuutwaarde-index"><h4 id="x3-2-7-secties-met-id-attribuutwaarde-index"><bdi class="secno">3.2.7 </bdi>Secties met 'id' attribuutwaarde 'index'</h4>
+</section><section id="secties-met-id-attribuutwaarde-index"><div class="header-wrapper"><h5 id="x3-2-2-7-secties-met-id-attribuutwaarde-index"><bdi class="secno">3.2.2.7 </bdi>Secties met 'id' attribuutwaarde 'index'</h5><a class="self-link" href="#secties-met-id-attribuutwaarde-index" aria-label="Permalink for Section 3.2.2.7"></a></div>
 <p><code>&lt;section id="index"&gt;&lt;/section&gt;</code> genereert een hoofdstuk met als titel 'Bijlage N Index' als er in minimaal 1 van de in het document opgenomen bestanden (zowel markdown als html) minimaal 1 'dfn' element is opgenomen. Vanuit de tekst kan naar dat element verwezen worden door een 'a' element op te nemen zonder attributen maar met als inhoud de naam van een 'dfn' element.</p>
-</section><section id="secties-met-een-andere-id-attribuutwaarde"><h4 id="x3-2-8-secties-met-een-andere-id-attribuutwaarde"><bdi class="secno">3.2.8 </bdi>Secties met een andere 'id' attribuutwaarde</h4>
+</section><section id="secties-met-een-andere-id-attribuutwaarde"><div class="header-wrapper"><h5 id="x3-2-2-8-secties-met-een-andere-id-attribuutwaarde"><bdi class="secno">3.2.2.8 </bdi>Secties met een andere 'id' attribuutwaarde</h5><a class="self-link" href="#secties-met-een-andere-id-attribuutwaarde" aria-label="Permalink for Section 3.2.2.8"></a></div>
 <ul>
 <li>Indien de sectie wordt toegevoegd met <code>&lt;sectie id="nnnnnn" data-include-format="markdown" data-include="filenaam.md"&gt;</code> dan wordt het hoofdstuk gevuld met de inhoud van 'filenaam.md'. Als 'filenaam.md' met een markdown titel start (ongeacht het level en het aantal blanco regels er voor) dan wordt een hoofdstuknummer voor die titel gegenereerd anders wordt de content zonder titel toegevoegd aan het document. Een evt. titel wordt ook opgenomen in de TOC.</li>
 <li>Indien de sectie wordt toegevoegd met <code>&lt;sectie data-include-format="markdown" data-include="filenaam.md"&gt;</code> dan wijkt het resultaat niet af van die van hierboven. Alleen wordt bij deze variant het 'id' van de sectie en de gerelateerde 'href' in de TOC gegenereerd op basis van de titel van deze sectie.</li>
 </ul>
 <p>In alle gevallen is <code>data-include-format="markdown"</code> verplicht.</p>
-</section><section id="secties-met-data-include-format-html"><h4 id="x3-2-9-secties-met-data-include-format-html"><bdi class="secno">3.2.9 </bdi>Secties met <code>data-include-format="html"</code></h4>
+</section><section id="secties-met-data-include-format-html"><div class="header-wrapper"><h5 id="x3-2-2-9-secties-met-data-include-format-html"><bdi class="secno">3.2.2.9 </bdi>Secties met <code>data-include-format="html"</code></h5><a class="self-link" href="#secties-met-data-include-format-html" aria-label="Permalink for Section 3.2.2.9"></a></div>
 <p>Dit soort secties wordt direct opgenomen op de plaats waar <code>&lt;section id="nnnn" data-include-format="html" data-include="filenaam.html"&gt;&lt;/section&gt;</code> is geplaatst.</p>
 <p>Het html fragment in het bestand hoeft niet te bestaan uit 1 root element. Sterker nog als dat wel het geval is en het fragment heeft de root 'div' of 'sectie' dan wordt het fragment niet vertaalt naar een separaat hoofdstuk.</p>
 <p>Om een separaat hoofdstuk te kunnen starten dient het document wel met een 'hx' element te starten (h1, h2, h3, etc..).</p>
 <p>De titel wordt dan ook opgenomen in de TOC.</p>
 <p>Dit soort secties mag ook zonder 'id' attribuut worden opgenomen. Die variant geeft geen ander resultaat dan die hiervoorgeschetst. Alleen wordt bij deze variant het id van de sectie en de gerelateerde href in de TOC gegenereerd op basis van de titel van deze sectie.</p>
 <p><code>data-include-format="html"</code> mag worden weggelaten.</p>
-</section><section id="andersoortige-secties"><h4 id="x3-2-10-andersoortige-secties"><bdi class="secno">3.2.10 </bdi>Andersoortige secties</h4>
+</section><section id="andersoortige-secties"><div class="header-wrapper"><h5 id="x3-2-2-10-andersoortige-secties"><bdi class="secno">3.2.2.10 </bdi>Andersoortige secties</h5><a class="self-link" href="#andersoortige-secties" aria-label="Permalink for Section 3.2.2.10"></a></div>
 <p>Indien een sectie element leeg is en het 'id' komt niet overeen met een van de, in de voorgaande paragrafen beschreven, bekende id's dan wordt de sectie genegeerd.</p>
-</section><section id="bijlage-n-referenties"><h4 id="x3-2-11-bijlage-n-referenties"><bdi class="secno">3.2.11 </bdi>Bijlage N Referenties</h4>
+</section></section><section id="bijlage-n-referenties"><div class="header-wrapper"><h4 id="x3-2-3-bijlage-n-referenties"><bdi class="secno">3.2.3 </bdi>Bijlage N Referenties</h4><a class="self-link" href="#bijlage-n-referenties" aria-label="Permalink for Section 3.2.3"></a></div>
 <p>Wordt alleen opgenomen als er in een van de andere documenten (zowel markdown als html)een referentie is opgenomen in de vorm '[ [Ref] ]' en die referentie in config.js of organisation-config.js is gedefinieerd.</p>
-</section><section id="images-in-de-documentatie"><h4 id="x3-2-12-images-in-de-documentatie"><bdi class="secno">3.2.12 </bdi>Images in de documentatie</h4>
+</section><section id="images-in-de-documentatie"><div class="header-wrapper"><h4 id="x3-2-4-images-in-de-documentatie"><bdi class="secno">3.2.4 </bdi>Images in de documentatie</h4><a class="self-link" href="#images-in-de-documentatie" aria-label="Permalink for Section 3.2.4"></a></div>
 <p>Plaats eventuele images die je in de Respec documentatie wil opnemen in de 'media' folder. Daarbinnen mag je elke door jou gewenste folderstructuur creëren.</p>
-</section></section><section id="lokale-respec-configuratie-properties"><h3 id="x3-3-lokale-respec-configuratie-properties"><bdi class="secno">3.3 </bdi>Lokale Respec configuratie properties</h3>
+</section></section><section id="lokale-respec-configuratie-properties"><div class="header-wrapper"><h3 id="x3-3-lokale-respec-configuratie-properties"><bdi class="secno">3.3 </bdi>Lokale Respec configuratie properties</h3><a class="self-link" href="#lokale-respec-configuratie-properties" aria-label="Permalink for Section 3.3"></a></div>
 <p>Zoals aangegeven maken we in het Respec framework gebruik van een aantal VNG-R properties. Properties die er voor zorgen dat alle Respec documentatie van VNG-R eenzelfde look en feel heeft. Er zijn echter ook een aantal lokale configuratie properties waarmee voor ieder Respec document eigen keuzes kunnen worden gemaakt. Denk daarbij aan de status die het document heeft, de publicatie datum, de editors, etc...</p>
 <p>Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je naar eigen inzicht aanpassen. </p>
 <blockquote>
 <p>Er moet nog bepaald worden welke properties lokaal moeten zijn en welke globaal (dus welke behoren te staan in de repository 'Respec-Organization-configurations').</p>
 </blockquote>
-</section><section id="functie-respec-configuratie-properties"><h3 id="x3-4-functie-respec-configuratie-properties"><bdi class="secno">3.4 </bdi>Functie Respec configuratie properties</h3>
-<p>Hieronder vind je de totale lijst van Configuratie properties. De vierde kolom geeft aan of het als een globale of lokale property wordt ingeschat, daar moet echter nog een discussie over gevoerd worden. Voor sommige properties is die inschattinh heel logisch, Zo zijn 'localizationStrings' en 'logos' logischerwijs globaal, 'github' en 'previousPublishVersion' zijn juist lokaal.
-Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled worden zoals 'useLogo'. In de op een na laatste kolom staan vragen of opmerkingen die we moeten bediscusieren en de laatste kolom geeft aan of de omschrijving van de property nog aandacht verdiend of van voldoende kwaliteit is.</p>
-<p>De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende document te vervolmaken te ondersteunen en kunnen, als alle properties bediscusieerd zijn, worden verwijderd. De kolom 'Documentatie status' geeft daarbij aan of betreffende property voldoende gedocumenteerd is om bediscusieerd te kunnen worden.</p>
+</section><section id="functie-respec-configuratie-properties"><div class="header-wrapper"><h3 id="x3-4-functie-respec-configuratie-properties"><bdi class="secno">3.4 </bdi>Functie Respec configuratie properties</h3><a class="self-link" href="#functie-respec-configuratie-properties" aria-label="Permalink for Section 3.4"></a></div>
+<p>Hieronder vind je de totale lijst van Configuratie properties. De vierde kolom geeft aan of het om een globale of lokale property gaat. Voor enkele properties is dat heel logisch, 
+zo zijn 'localizationStrings' en 'previousPublishVersion' logischerwijs globaal, 'github' en 'title' zijn juist weer lokaal.
+Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled worden zoals 'useLogo'. Doe dat echter alleen als daar een hele goede reden voor is.</p>
 <table class="simple">
     <thead>
         <tr>
             <th>Property</th>
-            <th><a href="https://github.com/Logius-standaarden/respec/wiki/addSectionLinks">Link</a></th>
             <th>Type</th>
-            <th>Globaal/Lokaal</th>
+            <th>Afspraak gebruik binnen VNG-R (Globaal/Lokaal)</th>
             <th>Vaste globale waarde of default waarde</th>
-            <th>Gerelateerd property</th>
             <th>Beschrijving</th>
-            <th>Opmerking/Vraag/Actie</th>
-            <th>Documentatie status</th>
+            <th>Opmerking</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>addSectionLinks</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/alternateFormats">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/addSectionLinks">addSectionLinks</a></td>
             <td>boolean</td>
-            <td>Globaal</td>
-            <td>false</td>
-            <td>
-            </td><td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br>Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.<br><br>Kan lokaal overruled worden.</td>
-            <td>Te bepalen of we standaard Respec documentatie met of zonder paragraafteken willen genereren en of we wel willen dat dat lokaal overruled kan worden.</td>
-            <td>Gereed </td>
+            <td>Globaal en lokaal</td>
+            <td>true</td>
+            <td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br>
+                Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je Respec document te kopiëren en elders te gebruiken.</td>
+            <td>Deze property kan lokaal overruled worden.</td>
         </tr>
         <tr>
-            <td>alternateFormats</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/authors">link</a></td>
+            <td><a href="[https://github.com/Logius-standaarden/respec/wiki/authors](https://github.com/Logius-standaarden/respec/wiki/alternateFormats)">alternateFormats</a></td>
             <td>Array met per formaat de properties 'label' en 'url'.</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment alleen pdf.<br>Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan pdf formaat met daarin de link naar het pdf bestand.</td>
-            <td>Dit kan geen globale property zijn.</td>
-            <td>Gereed</td>
-        </tr>
+            </td><td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment is alleen pdf mogelijk.<br>
+                Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan het pdf 
+                formaat met daarin de link naar het pdf bestand.</td>
+            <td>
+        </td></tr>
         <tr>
-            <td>authors</td>
-            <td><a href="">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/authors">authors</a></td>
             <td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br><br>Het heeft de voorkeur editors te gebruiken boven authors. Indien deze configuratie property niet aanwezig is wordt 'Auteurs' niet getoond.</td>
-            <td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
-            <td>Gereed </td>
+            </td><td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van het Respec document.<br><br>Het heeft de voorkeur editors te gebruiken 
+                boven authors. Indien deze configuratie property niet aanwezig is wordt 'Auteurs' niet getoond.</td>
+            <td>Authors hebben bijgedragen aan de initiële content van het Respec document, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
         </tr>
         <tr>
             <td>content</td>
-            <td>n.t.b.</td>
             <td>Array (zie een beschrijving onder deze tabel).</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Te gebruiken voor het toevoegen van content aan het Respec document.</td>
-            <td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
-            <td>Gereed</td>
-        </tr>
+            </td><td>Te gebruiken voor het toevoegen van content aan het Respec document. Het heeft de voorkeur [de 'Sectie' methode](./#sectie-methode) te gebruiken.</td>
+            <td>
+        </td></tr>
         <tr>
-            <td>editors</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/editors">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/editors">editors</a></td>
             <td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br><br>Het heeft de voorkeur editors te gebruiken boven authors. Indien deze configuratie property niet aanwezig is wordt 'Redacteurs' getoond zonder vulling.</td>
-            <td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
-            <td>Gereed</td>
+            </td><td>Één of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van het Respec document.<br><br>Het heeft de voorkeur editors te gebruiken boven 
+                authors. Indien deze configuratie property niet aanwezig is wordt 'Redacteurs' getoond zonder vulling.</td>
+            <td>Authors hebben bijgedragen aan de initiële content van het Respec document, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
         </tr>
         <tr>
-            <td>formerEditors</td>
-            <td><a href="https://github.com/w3c/respec/wiki/formerEditors">link</a></td>
+            <td><a href="https://github.com/w3c/respec/wiki/formerEditors">formerEditors</a></td>
             <td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Bevat 1 of meerdere beschrijvingen van personen die in het verleden hebben bijgedragen aan de totstandkoming van de specificatie.</td>
+            </td><td>Bevat 1 of meerdere beschrijvingen van personen die in het verleden hebben bijgedragen aan de totstandkoming van het Respec document.</td>
             <td>
-            </td><td>Gereed</td>
-        </tr>
+        </td></tr>
         <tr>
-            <td>github</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/github">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/github">github</a></td>
             <td>URI of een array van de properties 'repoURL' en 'branch'.</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
             </td><td>Gebruikt voor het genereren van de links in de 'Doe mee' tabel bovenin de Respec documentatie. Kan gevuld worden met
                 <ul>
                     <li>een url naar een GitHub repository</li>
@@ -730,232 +759,193 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
                     <li>een set van properties bestaande uit
                     <ul>
                         <li>repoURL: Een van bovenstaande opties</li>
-                        <li>branch: de branch waarin de specificaties maar ook issues staan opgeslagen.</li>
+                        <li>branch: de branch waarin het Respec document maar ook issues staan opgeslagen.</li>
                     </ul>
                     </li>
                 </ul>
-            Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.</td>
-            <td></td>
-            <td>Gereed</td>
-        </tr>
+                Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.<br><br>Indien niet gedefinieerd dan wordt de 'Doe mee' tabel niet gegenereerd.</td>
+            <td>
+        </td></tr>
         <tr>
-            <td>labelColor</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/labelColor">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/labelColor">labelColor</a></td>
             <td>Hexadecimale colorcode.</td>
             <td>Globaal</td>
             <td>
-            </td><td>
-            </td><td>Definieert de bij de in 'LocalizationStrings' gedefinieerde waardes horende kleuren.<br><br>Mag niet Lokaal overruled worden.</td>
-            <td>Bij VNG-R zullen we nog de bij onze statussen gewenste kleuren moeten definiëren.</td>
-            <td>Gereed</td>
+            </td><td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.<br><br>Deze property kan niet Lokaal gespecificeerd en dus ook niet overruled worden.</td>
+            <td>De specifiek voor VNG Realisatie gedefinieerde statussen kennen de volgende kleuren:<br>
+                <ul>
+                <li>In Gebruik (IG): <span style="color: #A569BD">█████</span></li>
+                <li>In Ontwikkeling (IO): <span style="color: #DC7633">█████</span></li>
+                </ul>
+            </td>
         </tr>
         <tr>
-            <td>latestVersion</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">latestVersion</a></td>
             <td>Combinatie van strings en configuration propertynamen.</td>
             <td>Globaal</td>
-            <td>
-            </td><td>
-            </td><td>Url van de laatst gepubliceerde versie.<br>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br><br>
-            Mag niet lokaal overruled worden.</td>
-            <td>Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
-            <td>Gereed</td>
+            <td>Samenvoeging van achtereenvolgens <code>nl_organisationPublishURL</code>, <code>pubDomain</code>, "/",  en <code>shortName</code>.</td>
+            <td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br><br>
+                Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
+                ook niet aangemaakt. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.</td>
+            <td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
+                van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
         </tr>
         <tr>
-            <td>license</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/license">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/license">license</a></td>
             <td>enumeration</td>
-            <td>Globaal</td>
+            <td>Globaal en lokaal</td>
             <td>eupl</td>
-            <td>
-            </td><td>Definieert het licentietype dat van toepassing is op de specificatie. VNG-R hanteert de 'EUPL' licentie maar zo gewenst kan ook gekozen worden voor 'CC0', 'CC-BY' of 'CC-BY-ND'. Toegestane waardes 'eupl', 'cc0', 'cc-by', 'cc-by-nd'. Wordt gebruikt om licentie-logo en bijbehorende link in het document te genereren.
-                Nieuwe licentie types en het bijbehorende logo kunnen in de Globale property 'licenses' worden gedefinieerd.<br><br>Kan lokaal overruled worden.</td>
-            <td>Willen we wel dat deze lokaal overruled kan worden?</td>
-            <td>Gereed</td>
+            <td>Definieert het licentietype dat van toepassing is op het Respec document. VNG-R hanteert de 'EUPL' licentie maar zo gewenst kan ook gekozen worden voor 'CC0', 'CC-BY' of 'CC-BY-ND'. 
+                Toegestane waardes 'eupl', 'cc0', 'cc-by', 'cc-by-nd'. Wordt gebruikt om licentie-logo en bijbehorende link in het document te genereren.<br>
+                <br><br>Deze property kan en mag lokaal overruled worden.</td>
+            <td>Nieuwe licentie types en het bijbehorende logo kunnen in de Globale property 'licenses' worden gedefinieerd.</td>
         </tr>
         <tr>
-            <td>licenses</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/licenses">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/licenses">licenses</a></td>
             <td>Array met per licentiecode de properties 'name', 'short', 'url' en 'image'.</td>
-            <td>Globaal</td>
+            <td>Globaal en lokaal</td>
             <td>
-            </td><td>
-            </td><td>Definieert middels een array van configuratie opties de te gebruiken soorten licenties waarnaar middels de code kan worden verwezen in de configuratie-optie 'license'.<br><br>Mag waarschijnlijk lokaal overruled worden.</td>
-            <td>Bij VNG-R zullen we moeten bepalen welke licenties bij ons van toepassing (zouden kunnen) zijn.<br>Ik vermoed dat ook deze lokaal te overrulen is maar willen we dat wel.</td>
-            <td>Gereed</td>
-        </tr>
+            </td><td>Definieert middels een array van configuratie properties ('name', 'short', 'url' en 'image') de te gebruiken soorten licenties waarnaar middels de code kan worden verwezen in de 
+                configuratie-optie 'license'.<br><br>Deze property is globaal gedefinieerd maar lokaal mogen er licentietypes toegevoegd worden.</td>
+            <td>
+        </td></tr>
         <tr>
-            <td>localBiblio</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/localBiblio">link</a></td>
-            <td>1 of meerdere objecten met set van properties.</td>
-            <td>?</td>
-            <td>n.t.b.</td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/localBiblio">localBiblio</a></td>
+            <td>Array van één of meerdere objecten met met per object de properties 'href', 'title, 'publisher', 'date' en 'rawDate'.</td>
+            <td>Globaal en lokaal</td>
             <td>
-            </td><td>Hiermee kan een lijst met referenties in het hoofdstuk 'Referenties' worden gegenereerd. Die referenties bevatten metainformatie (bijv. auteur, publicatiedatum en status) en links naar de betreffende externe referenties. De referenties worden echter alleen opgenomen in dat hoofdstuk als er in het Respec document naar verwezen wordt middels een link in de volgende syntax <code>[[Referentienaam]]</code>. Deze syntax geldt voor zowel html als markdown documenten.<br><br>
-                Indien een link wordt opgenomen in een normatief documentdeel zal de referentie terecht komen in de subparagraaf 'Normatieve referenties'. Is deze opgenomen in een informatief documentdeel dan komt deze in de subparagraaf 'Informatieve referenties' terecht.<br><br>
-                Gerefereerd kan worden aan specrefs die beschikbaar zijn in de SpecRef database https://www.specref.org/ (zie ook https://github.com/tobie/specref) of aan zelf in deze propertty gedefinieerde referenties. De syntax voor de inhoud van de localBiblio property is beschreven in https://github.com/tobie/specref/blob/main/schemas/raw-reference.json.<br><br>
-                Deze property kan zowel lokaal als globaal geconfigureerd worden.<br><br>Voor referenties waarvan we verwachten dat deze vaker gebruikt gaan worden of waarvan inmiddels duidelijk is dat deze vaker gebruikt worden dient een verzoek gedaan te worden gedaan deze op te nemen in de organisation-config.js. Beheerders van Respec repositories zijn er vanaf dat moment zelf verantwoordelijk voor dat deze referenties uit hun eigen config.js worden verwijderd.</td>
+            </td><td>Hiermee kan een lijst met referenties in het hoofdstuk 'Referenties' worden gegenereerd. Die referenties bevatten metainformatie (bijv. 'auteur', 'publicatiedatum' en 'status') en 
+                links naar de betreffende externe referenties. De referenties worden echter alleen opgenomen in dat hoofdstuk als er in het Respec document naar verwezen wordt middels een 
+                link in de volgende syntax <code>[[Referentienaam]]</code>. Deze syntax geldt voor zowel html als markdown documenten.<br><br>
+                Indien een link wordt opgenomen in een normatief documentdeel zal de referentie terecht komen in de subparagraaf 'Normatieve referenties'. Is deze opgenomen in een informatief 
+                documentdeel dan komt deze in de subparagraaf 'Informatieve referenties' terecht.<br><br>
+                Gerefereerd kan worden aan specrefs die beschikbaar zijn in <a href="https://www.specref.org/">de SpecRef database</a> (zie ook 
+                <a href="https://github.com/tobie/specref">https://github.com/tobie/specref</a> of aan zelf in deze propertty gedefinieerde referenties. De syntax voor de inhoud van de localBiblio 
+                property is <a href="https://github.com/tobie/specref/blob/main/schemas/raw-reference.json">hier</a> beschreven.<br><br>
+                Deze property kan zowel lokaal als globaal geconfigureerd worden.<br><br>Voor referenties waarvan we verwachten dat deze vaker gebruikt gaan worden of waarvan inmiddels duidelijk 
+                is dat deze vaker gebruikt worden dient een verzoek te worden gedaan deze op te nemen in de organisation-config.js of nog beter deze op te laten nemen in de 
+                <a href="https://www.specref.org/">SpecRef database</a>. Sterker nog, het wordt zelfs aangemoedigd geen gebruik van deze property te maken. Beheerders van Respec repositories zijn 
+                er vanaf het moment dat de referentie is opgenomen in een van de twee opties zelf verantwoordelijk voor dat deze referenties uit hun eigen config.js worden verwijderd.</td>
             <td>
-            </td><td>Gereed</td>
-        </tr>
+        </td></tr>
         <tr>
-            <td>localizationStrings</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/localizationStrings">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/localizationStrings">localizationStrings</a></td>
             <td>Array van properties per taalcode</td>
-            <td>Globaal</td>
+            <td>Globaal en lokaal</td>
             <td>
-            </td><td>
-            </td><td>Bevat voor een aantal doelen en talen voor de te gebruiken codes en de daarbij horende volledige tekst.</td>
-            <td>Nog te bepalen voor welke doelen hier codes gedefinieerd kunnen worden.<br><br>
-                Bij VNG-R zullen we moeten bepalen of alle bestaande codes gewenst zijn en of er nieuwe codes toegevoegd moeten worden.<br><br>Is Lokaal specificeren voor deze configuratie property wel aan de orde.</td>
-            <td>
-        </td></tr>
+            </td><td>Bevat voor een aantal doel- ('document statussen' en 'document types') / taalcombinaties de te gebruiken codes en de daarbij horende tekst.</td>
+            <td>Bij VNG-R zullen we moeten bepalen of alle bestaande codes gewenst zijn en of er nieuwe codes toegevoegd moeten worden.<br><br>Lokaal overrulen van deze property is niet
+                toegestaan. Definieer indien gewenst een nieuwe code en bijbehorende tekst en neem tegelijkertijd stappen deze op te laten nemen in de globale variant van deze property.</td>
+        </tr>
         <tr>
-            <td>logos</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/logos">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/logos">logos</a></td>
             <td>Array per logo van de properties 'src', 'alt', 'id', 'height' en 'url'.</td>
-            <td>Globaal</td>
+            <td>Globaal en lokaal</td>
             <td>VNG Realisatie logo</td>
-            <td>
-            </td><td>definieert de src, alternate tekst, url en grootte van het linksboven in de specificatie te plaatsen logo.<br><br>Mag niet Lokaal overruled worden.</td>
+            <td>Definieert de src, alternate tekst, url en grootte van het linksboven in het Respec document te plaatsen logo.<br><br>Deze property kan lokaal overruled worden.</td>
             <td>Willen we het VNG Realisatie logo geplaatst hebben of een ander logo?</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>maxTocLevel</td>
-            <td><a href="https://github.com/w3c/respec/wiki/maxTocLevel">link</a></td>
+            <td><a href="https://github.com/w3c/respec/wiki/maxTocLevel">maxTocLevel</a></td>
             <td>Integer</td>
-            <td>Lokaal</td>
-            <td>0</td>
+            <td>Globaal en lokaal</td>
             <td>
-            </td><td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.</td>
-            <td>Default worden alle niveau's opgenomen. Maken we hier i.d.d. een lokale property van die alleen wordt opgenomen en aangepast als de inhoudsopgave dermate groot is dat het ondoenlijk wordt er doorheen te scrollen? Ik ben bang dat dit denk al redelijk snel het geval is. </td>
-            <td>Gereed</td>
+            </td><td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.<br><br>Deze property kan lokaal overruled worden.</td>
+            <td>Default worden alle niveau's opgenomen.</td>
         </tr>
         <tr>
-            <td>nl_organisationName</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationName">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationName">nl_organisationName</a></td>
             <td>String</td>
-            <td>Globaal</td>
+            <td>Globaal en lokaal</td>
             <td>VNG Realisatie</td>
-            <td>
-            </td><td>Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren.<br><br>
-                Kan lokaal overruled worden.</td>
-            <td>Willen we wel dat deze lokaal overruled kan worden? Zo ja dan moet ook het logo misschien overruled kunnen worden.</td>
-            <td>Gereed</td>
-        </tr>
-        <tr>
-            <td>nl_organisationPublishURL</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationPublishURL">link</a></td>
-            <td>URL</td>
-            <td>Globaal</td>
-            <td>?</td>
-            <td>
-            </td><td>Wordt gebruikt voor het genereren van de link naar de GitHub pages van de huidige, de vorige en de laatst gepubliceerde versie. Een link die leidt naar een document in de GitHub Pages interface van de 'publicatie' GitHub repository. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.<br><br>Kan worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.<br><br>Mag niet lokaal overruled worden.</td>
-            <td>Er moet bepaald worden welke waarde we hier als VNG-R willen hebben staan. Helemaal onderin de README.md doe ik een voorstel voor de publicatie GitHub repository wat daarmee verband houdt. N.m.m. moet dit een globale configuratie optie zijn en er moet dus ook beschreven worden hoe hier procesmatig mee omgegaan moet worden. Daarover moet nog wel een beslissing worden genomen en ook of een lokale variant toegestaan is.</td>
+            <td>Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren.<br><br>Deze property kan lokaal overruled worden.</td>
             <td>
         </td></tr>
         <tr>
-            <td>nl_organisationStylesURL</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationStylesURL">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationPublishURL">nl_organisationPublishURL</a></td>
             <td>URL</td>
-            <td>Globaal</td>
+            <td>Globaal en lokaal</td>
+            <td>https://vng-realisatie.github.io/publicatie</td>
+            <td>Wordt gebruikt voor het genereren van de link naar de GitHub pages van de huidige, de vorige en de laatst gepubliceerde versie. Een link die leidt naar een document in 
+                de GitHub Pages interface van de 'publicatie' GitHub repository en zo gewenst de in de 'publicatie' repository gedefinieerde custom domain name.<br><br>
+                Kan worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.<br><br>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. 
+                Het betekent nl. dat de huidige en evt. voorgaande versies van het Respec document niet vanuit de VNG-R publicatie repository worden gepubliceerd.</td>
             <td>
-            </td><td>
-            </td><td>Definieert de lokatie waar het te gebruiken css bestand staat excl. dat bestand zelf.<br><br>Mag niet Lokaal overruled worden.</td>
-            <td>Moet onderzocht worden of we hiervoor een eigen variant kunnen creëren en zo ja of we dat ook willen.</td>
-            <td>Gereed</td>
-        </tr>
+        </td></tr>
         <tr>
-            <td>noTOC</td>
-            <td><a href="https://github.com/w3c/respec/wiki/noTOC">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationStylesURL">nl_organisationStylesURL</a></td>
+            <td>URL</td>
+            <td>Globaal en lokaal</td>
+            <td>https://gitdocumentatie.logius.nl/publicatie/respec/style/</td>
+            <td>Definieert de locatie waar het te gebruiken css bestand staat excl. dat bestand zelf.<br><br>Deze property kan lokaal overruled worden.</td>
+            <td>
+        </td></tr>
+        <tr>
+            <td><a href="https://github.com/w3c/respec/wiki/noTOC">noTOC</a></td>
             <td>boolean</td>
             <td>Lokaal</td>
             <td>false</td>
+            <td>Bepaald of er links van de inhoud een frame met de inhoudsopgave gegenereerd moet worden.</td>
             <td>
-            </td><td>Bepaald of er links van de inhoud een frame met de inhoudsopgave gegenereerd moet worden.</td>
-            <td>Moet het mogelijk voor repository eigenaren om te besluiten geen TOC te genereren?</td>
-            <td>Gereed</td>
-        </tr>
+        </td></tr>
         <tr>
-            <td>otherLinks</td>
-            <td><a href="https://github.com/w3c/respec/wiki/otherLinks">link</a></td>
+            <td><a href="https://github.com/w3c/respec/wiki/otherLinks">otherLinks</a></td>
             <td>Array van properties</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
             </td><td>Genereert een sectie in de header van het Respec document met als titel de key van deze property en als inhoud een of meerdere links.</td>
             <td>
-            </td><td>Gereed</td>
-        </tr>
+        </td></tr>
         <tr>
-            <td>postProcess</td>
-            <td><a href="https://github.com/w3c/respec/wiki/postProcess">link</a></td>
-            <td>
-            </td><td>?</td>
+            <td><a href="https://github.com/w3c/respec/wiki/postProcess">postProcess</a></td>
+            <td>Functie aanroep.</td>
+            <td>Globaal</td>
             <td>?</td>
-            <td>
-            </td><td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.</td>
+            <td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.<br><br>Deze property kan niet lokaal gedefinieerd worden en dus ook niet overruled worden.</td>
             <td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs.</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>previousMaturity</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/previousMaturity">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/previousMaturity">previousMaturity</a></td>
             <td>enumeration</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Status van de voorgaande versie.<br><br>
-                Kan evt. worden gebruikt in de properties 'prevVersion' maar wordt daar nu niet gebruikt.</td>
-            <td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
-            <td>Gereed</td>
+            </td><td>Status van de voorgaande in de 'publicatie' repository gepubliceerde versie.</td>
+            <td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
         </tr>
         <tr>
-            <td>previousPublishDate</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishDate">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishDate">previousPublishDate</a></td>
             <td>Datum in het formaat YYYY-MM-DD</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Publicatiedatum van de voorgaande versie.<br><br>
-                Kan evt. worden gebruikt in de properties 'prevVersion' maar wordt daar nu niet gebruikt.</td>
-            <td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
-            <td>Gereed</td>
+            </td><td>Publicatiedatum van de voorgaande versie.</td>
+            <td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
         </tr>
         <tr>
-            <td>previousPublishVersion</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishVersion">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishVersion">previousPublishVersion</a></td>
             <td>SemVer notatie</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
             </td><td>Versienummer van de voorgaande versie in SemVer notatie (https://semver.org/lang/nl/).<br><br>
                 Wordt gebruikt in de property 'prevVersion'.</td>
-            <td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
-            <td>Gereed</td>
+            <td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
         </tr>
         <tr>
-            <td>prevVersion</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">prevVersion</a></td>
             <td>Combinatie van strings en propertynamen</td>
-            <td>?</td>
+            <td>Globaal</td>
             <td>
-            </td><td>
             </td><td>Url van de voorgaande versie.<br>
-                Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br><br>
-                Indien deze configuration property niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.</td>
-            <td>Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
-            <td>Gereed</td>
+            Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br><br>
+            Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in het Respec document ook niet aangemaakt.<br><br>
+            Mag niet lokaal overruled worden.</td>
+            <td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
         </tr>
         <tr>
-            <td>pubDomain</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/pubDomain">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/pubDomain">pubDomain</a></td>
             <td>enumeration</td>
-            <td>Lokaal</td>
+            <td>Globaal</td>
             <td>
-            </td><td>
-            </td><td>Definieert het publicatie domein van de specificatie en heeft op dit moment de waarde 'cim'.<br><br>Wordt nu gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
+            </td><td>Definieert het publicatie domein van het Respec document en heeft op dit moment de waarde 'cim'.<br><br>Wordt nu gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
             <td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'lastVersion', 'thisVersion' en 'prevVersion'.<br><br>
                 Een andere mogelijkheid is de folder 'cim' vast op te nemen in de configuratie property 'nl_organisationPublishURL' en binnen VNG-R voor deze property de volgende waarden toe te staan en te definiëren:
                 <ul>
@@ -968,173 +958,132 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
                 </ul>
                 Dat betekent wel dat de folderstructuur van de 'publicatie' GitHub repository ook moet worden aangepast.
             </td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>publishDate</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/publishDate">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/publishDate">publishDate</a></td>
             <td>Datum in het formaat YYYY-MM-DD</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
             </td><td>Publicatiedatum van de huidige versie.<br><br>
                 Kan evt. worden gebruikt in de properties 'latestVersion' en 'thisVersion'.</td>
             <td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>publishVersion</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/publishVersion">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/publishVersion">publishVersion</a></td>
             <td>SemVer notatie</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
             </td><td>Versienummer van de huidige versie in SemVer notatie (https://semver.org/lang/nl/).<br><br>
                 Wordt gebruikt in de properties 'lastVersion' en 'thisVersion'.</td>
             <td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>shortName</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/shortName">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/shortName">shortName</a></td>
             <td>String</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Korte naam (mnemonic) van de specificatie.<br><br>
+            </td><td>Korte naam (mnemonic) van het Respec document.<br><br>
                 Wordt gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
             <td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>sotdText</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/sotdText">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/sotdText">sotdText</a></td>
             <td>Array van properties per taalcode.</td>
             <td>Globaal</td>
-            <td></td>
             <td>
             </td><td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.<br><br>Mag niet lokaal overruled worden.</td>
             <td>Bij VNG-R zullen we moeten bepalen welke teksten er bij welke status gegenereerd moeten worden.</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>specStatus</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/specStatus">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/specStatus">specStatus</a></td>
             <td>enumeration</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Definieert de status van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br><br>
+            </td><td>Definieert de status van het Respec document. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br><br>
                 De kleuren voor de VNG-R statussen kunnen worden gedefinieerd in de globale optie 'labelColor'.<br><br>
                 Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
             <td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>spectype</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/specType">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/specType">spectype</a></td>
             <td>enumeration</td>
             <td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>Definieert het type van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br><br>
+            </td><td>Definieert het type van het Respec document. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br><br>
                 Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
             <td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>subtitle</td>
-            <td><a href="https://github.com/w3c/respec/wiki/subtitle">link</a></td>
+            <td><a href="https://github.com/w3c/respec/wiki/subtitle">subtitle</a></td>
             <td>String</td>
             <td>Lokaal</td>
             <td>n.v.t.</td>
-            <td>
-            </td><td>String die als subtitel van de titel van het document dient. Wordt geplaatst boven de gegenereerde subtitel waarin de organisatienaam, documenttype, specStatus en versiedatum worden gebruikt.</td>
-            <td>
-            </td><td>Gereed</td>
-        </tr>
-        <tr>
-            <td>testSuiteURI</td>
-            <td><a href="https://github.com/w3c/respec/wiki/testSuiteURI">link</a></td>
-            <td>URL</td>
-            <td>Lokaal</td>
-            <td>n.v.t.</td>
-            <td>
-            </td><td>Genereert een sectie in de header van het Respec document met als titel 'Test suite' en als inhoud een link naar een testsuite. Wellicht te gebruiken voor het API Testplatform maar alleen als we Respec ook gaan gebruiken voor de API's.</td>
-            <td>Wordt de genoemde sectie niet gegenereerd als we deze property weglaten?</td>
+            <td>String die als subtitel van de titel van het document dient. Wordt geplaatst boven de gegenereerde subtitel waarin de organisatienaam, documenttype, specStatus en versiedatum worden gebruikt.</td>
             <td>
         </td></tr>
         <tr>
-            <td>thisVersion</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">link</a></td>
+            <td><a href="https://github.com/w3c/respec/wiki/testSuiteURI">testSuiteURI</a></td>
+            <td>URL</td>
+            <td>Lokaal</td>
+            <td>n.v.t.</td>
+            <td>Genereert een sectie in de header van het Respec document met als titel 'Test suite' en als inhoud een link naar een testsuite. Wellicht te gebruiken voor het API Testplatform maar alleen als we Respec ook gaan gebruiken voor de API's.</td>
+            <td>Wordt de genoemde sectie niet gegenereerd als we deze property weglaten?</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">thisVersion</a></td>
             <td>Combinatie van strings en propertynamen</td>
             <td>Globaal</td>
             <td>
-            </td><td>
             </td><td>Url van de huidige versie.<br>
-                Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br><br>
-                Het is verplicht deze property van een waarde te voorzien en deze mag niet Lokaal overruled worden.</td>
-            <td>Willen we dat dit een globale property is of juist een lokale? Indien het een globale wordt moet het dan lokaal overruled kunnen worden?<br>
-                Bijv. met een lege waarde waardoor de gerelateerde rubriek in de specificatie ook niet wordt aangemaakt. &lt;-- Is dat wel de manier om dit te doen?<br><br>
-                Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
-            <td>Gereed</td>
+            Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br><br>
+            Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in het Respec document ook niet aangemaakt.<br><br>
+            Mag niet lokaal overruled worden.</td>
+            <td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
         </tr>
         <tr>
             <td>title</td>
-            <td>-</td>
             <td>
             </td><td>Lokaal</td>
             <td>
-            </td><td>
-            </td><td>De titel van de betreffende specificatie.</td>
-            <td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
-            <td>Gereed</td>
-        </tr>
+            </td><td>De titel van het Respec document.</td>
+            <td>
+        </td></tr>
         <tr>
-            <td>useLabel</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/useLabel">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/useLabel">useLabel</a></td>
             <td>boolean</td>
             <td>Globaal</td>
             <td>true</td>
-            <td>
-            </td><td>Bepaald of het verticale label aan de linker bovenzijde van de inhoudsopgave gegenereerd moet worden.<br><br>
+            <td>Bepaald of het verticale label aan de linker bovenzijde van de inhoudsopgave gegenereerd moet worden.<br><br>
                 Kan lokaal overruled worden.</td>
             <td>Willen we wel dat deze lokaal overruled kan worden?<br><br>
                 Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
-            <td>Gereed</td>
         </tr>
         <tr>
-            <td>useLogo</td>
-            <td><a href="https://github.com/Logius-standaarden/respec/wiki/useLogo">link</a></td>
+            <td><a href="https://github.com/Logius-standaarden/respec/wiki/useLogo">useLogo</a></td>
             <td>boolean</td>
             <td>Globaal</td>
             <td>true</td>
-            <td>
-            </td><td>Bepaald of het VNG-Realisatie logo in de rechter bovenzijde van het document geplaatst moet worden.<br><br>
+            <td>Bepaald of het VNG-Realisatie logo in de rechter bovenzijde van het document geplaatst moet worden.<br><br>
                 Kan lokaal overruled worden.</td>
             <td>Willen we wel dat deze lokaal overruled kan worden?</td>
-            <td>Gereed</td>
         </tr>
         
         <tr>
-            <td>edDraftURI</td>
-            <td><a href="https://github.com/w3c/respec/wiki/edDraftURI">link</a></td>
+            <td><a href="https://github.com/w3c/respec/wiki/edDraftURI">edDraftURI</a></td>
             <td>URL</td>
             <td>?</td>
             <td>
-            </td><td>
-            </td><td>Beschrijft de url waar de draft van de specificatie kan worden bekeken. Er wordt geadviseerd de Editors Draft niet te publiceren. Indien deze property een lege waarde heeft wordt 'Laatste werkversie' niet getoond.</td>
+            </td><td>Beschrijft de url waar de draft van het Respec document kan worden bekeken (de laatste werkversie). Indien deze property een lege waarde heeft wordt 'Laatste werkversie' niet getoond. De laatste werkversie is overigens wat anders dan de laatste gepubliceerde versie.</td>
             <td>
-            </td><td>Gereed</td>
-        </tr>
+        </td></tr>
     </tbody>
 </table></section></section>
-  <section id="publ"><h2 id="x4-publiceren-respec-documentatie-under-construction"><bdi class="secno">4. </bdi>Publiceren Respec documentatie (under construction)</h2>
+  <section id="publ"><div class="header-wrapper"><h2 id="x4-publiceren-respec-documentatie-under-construction"><bdi class="secno">4. </bdi>Publiceren Respec documentatie (under construction)</h2><a class="self-link" href="#publ" aria-label="Permalink for Section 4."></a></div>
 <p>Het is de bedoeling dat het publiceren van de statische html en pdf geautomatiseerd gaat verlopen. Dat hebben we helaas nog niet op orde en om die reden doen we dit voorlopig handmatig.</p>
 <p>Het publiceren van Respec documentatie gebeurd niet vanuit de GitHub repository waarin deze wordt samengesteld en gegenereerd. 
 In die repository kan nl. slechts één versie van die Respec documentatie met GitHub Pages worden aangeboden terwijl we de mogelijkheid willen hebben alle voorgaande versies ook aan te bieden. Anders zouden de links in het eerst deel van de Respec documenten ook dood lopen.
 Om die reden wordt bij het genereren van Respec documentatie het bestanden 'snapshot.html' en een pdf bestand gegenereerd zodat we deze bestanden kunnen kopiëren naar de 'publicatie' repository vanwaaruit we alle Respec documentatie publiceren.</p>
-<section id="inrichten-publicatie-repository"><h3 id="x4-1-inrichten-publicatie-repository"><bdi class="secno">4.1 </bdi>Inrichten publicatie repository</h3>
+<section id="inrichten-publicatie-repository"><div class="header-wrapper"><h3 id="x4-1-inrichten-publicatie-repository"><bdi class="secno">4.1 </bdi>Inrichten publicatie repository</h3><a class="self-link" href="#inrichten-publicatie-repository" aria-label="Permalink for Section 4.1"></a></div>
 <blockquote>
 <p><strong>LET OP!</strong><br>
 De hieronder uitgewerkte structuur van de publicatie GitHub repository is slechts een voorstel.</p>
@@ -1189,12 +1138,12 @@ De hieronder uitgewerkte structuur van de publicatie GitHub repository is slecht
 <p>Tijdens het samenstellen van de inhoud van een nieuwe versie van een bestaand of geheel nieuw Respec document kun je de structuur in de 'publicatie' repository al aanpassen.
 Betreft het de eerste versie van een Respec document creëer dan direct in de folder 'cim' een nieuwe folder die als naam de mnemonic van het project krijgt. Daarbinnen creëer je een versiefolder met als naam het versienummer waaronder je de eerste versie publiceert.
 Bestaat de projectfolder al wel dan creëer in die folder een nieuwe versiefolder met als naam het versienummer waaronder je de nieuwe versie publiceert. In beide folders creëer je voorlopig een leeg 'index.html' bestand.</p>
-</section><section id="publiceren-van-documenten"><h3 id="x4-2-publiceren-van-documenten"><bdi class="secno">4.2 </bdi>Publiceren van documenten</h3>
+</section><section id="publiceren-van-documenten"><div class="header-wrapper"><h3 id="x4-2-publiceren-van-documenten"><bdi class="secno">4.2 </bdi>Publiceren van documenten</h3><a class="self-link" href="#publiceren-van-documenten" aria-label="Permalink for Section 4.2"></a></div>
 <p>Na generatie kunnen de bestanden 'snapshot.html' en 'snapshot.pdf' vanuit de GitHub repository waarin ze gegenereerd zijn worden gekopieerd projectfolder en naar de naar de zojuist aangemaakte versiefolder in de 'publicatie' repository. 
 Het bestand 'index.html' verwijder je vervolgens in beide folders waarna je 'snapshot.html', eveneens in beide folder, hernoemt naar 'index.html'. Indien je in je Resoec documentatie images hebt geplaatst dan heb je die bestanden in de 'media' folder opgeslagen, kopieer in dat geval de 'media' folder eveneens naar beide folders.</p>
 <p>Pas vervolgens in de root van de publicatie repository de 'index.md' aan zodat je toegang hebt tot alle Respec documentatie en de http links kunt kopiëren voor gebruik in andere GitHub Pages documentatie.</p>
 </section></section>
-  <section id="probl"><h2 id="x5-foutoplossing"><bdi class="secno">5. </bdi>Foutoplossing</h2>
+  <section id="probl"><div class="header-wrapper"><h2 id="x5-foutoplossing"><bdi class="secno">5. </bdi>Foutoplossing</h2><a class="self-link" href="#probl" aria-label="Permalink for Section 5."></a></div>
 <p>Nadat een bestand in een op de VNG-R-Respec-Temp[late repository gebaseerde repository wordt gewijzigd, toegevoegd of verwijderd treedt het 'Build' action script in werking. Er kunnen zich daarbij diverse problemen voordoen.
 Detectie van een probleem start altijd bij het onderzoeken van de Action workflows. Deze kun je benaderen door in GitHub het tabblad 'Actions' aan te klikken waarn. In het daarop volgende scherm tref je vervolgens een tweetal typen workflows aan.</p>
 <ul>
@@ -1271,25 +1220,25 @@ Ter ondersteuning bij het oplossen van die problemen beschrijven we er hier een 
 <td></td>
 </tr>
 </tbody></table>
-</section><section id="het-vng-r-respec-proces"><h2 id="x6-het-vng-r-respec-proces"><bdi class="secno">6. </bdi>Het VNG-R Respec proces</h2>
+</section><section id="het-vng-r-respec-proces"><div class="header-wrapper"><h2 id="x6-het-vng-r-respec-proces"><bdi class="secno">6. </bdi>Het VNG-R Respec proces</h2><a class="self-link" href="#het-vng-r-respec-proces" aria-label="Permalink for Section 6."></a></div>
 <p>Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie hanteren om tot Respec documentatie te komen. Daarnaast is het echter ook een voorbeeld van het gebruik van de Mermaid syntax voor het vervaardigen van zo'n flowchart. Zie de '<a href="https://mermaid.js.org/syntax/flowchart.html">Flowchart syntax</a>' voor een uitleg van de Mermaid syntax.</p>
 <figure id="fig-het-vng-r-respec-proces-mermaid-voorbeeld">
     
-<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="2070.871826171875" style="max-width: 849.49609375px;" viewBox="0 0 849.49609375 2070.871826171875"><style>
+<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1947.2718505859375" style="max-width: 849.49609375px;" viewBox="0 0 849.49609375 1947.2718505859375"><style>
 #diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M419.2890625,52L419.2890625,56.166666666666664C419.2890625,60.333333333333336,419.2890625,68.66666666666667,419.2890625,77C419.2890625,85.33333333333333,419.2890625,93.66666666666667,419.2890625,102C419.2890625,110.33333333333333,419.2890625,118.66666666666667,419.2890625,127C419.2890625,135.33333333333334,419.2890625,143.66666666666666,419.2890625,152C419.2890625,160.33333333333334,419.2890625,168.66666666666666,419.3723958333333,177.08333358764648C419.4557291666667,185.50000050862627,419.6223958333333,194.00000101725254,419.7057291666667,198.25000127156568L419.7890625,202.50000152587882" marker-end="url(#arrowhead189)" style="fill:none"></path><defs><marker id="arrowhead189" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-C" id="L-B-C" style="opacity: 1;"><path class="path" d="M348.5477953702142,348.1306063443352L313.9109232251785,366.0874839449864C279.2740510801428,384.0443615456375,210.0003067900714,419.9581167469399,175.3634346450357,447.7483276809244C140.7265625,475.5385386149089,140.7265625,495.2052052815755,140.7265625,512.8718719482422C140.7265625,530.5385386149088,140.7265625,546.2052052815756,140.7265625,560.2052052815756C140.7265625,574.2052052815756,140.7265625,586.5385386149088,140.7265625,598.8718719482422C140.7265625,611.2052052815756,140.7265625,623.5385386149088,140.7265625,633.8718719482422C140.7265625,644.2052052815756,140.7265625,652.5385386149088,140.7265625,660.8718719482422C140.7265625,669.2052052815756,140.7265625,677.5385386149088,140.7265625,687.8718719482422C140.7265625,698.2052052815756,140.7265625,710.5385386149088,140.7265625,716.7052052815756L140.7265625,722.8718719482422" marker-end="url(#arrowhead190)" style="fill:none"></path><defs><marker id="arrowhead190" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M157.3984375,747.4496415365148L218.21744791666666,756.8533466051362C279.0364583333333,766.2570516737572,400.6744791666667,785.0644618109997,461.4934895833333,798.6348335462876C522.3125,812.2052052815756,522.3125,820.5385386149088,522.3125,828.8718719482422C522.3125,837.2052052815756,522.3125,845.5385386149088,522.3125,853.8718719482422C522.3125,862.2052052815756,522.3125,870.5385386149088,522.3125,878.8718719482422C522.3125,887.2052052815756,522.3125,895.5385386149088,533.6569010416666,903.8718719482422C545.0013020833334,912.2052052815756,567.6901041666666,920.5385386149088,579.0345052083334,924.7052052815756L590.37890625,928.8718719482422" marker-end="url(#arrowhead191)" style="fill:none"></path><defs><marker id="arrowhead191" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-E" id="L-C-E" style="opacity: 1;"><path class="path" d="M140.7265625,766.8718719482422L140.7265625,773.0385386149088C140.7265625,779.2052052815756,140.7265625,791.5385386149088,140.7265625,801.8718719482422C140.7265625,812.2052052815756,140.7265625,820.5385386149088,140.7265625,828.8718719482422C140.7265625,837.2052052815756,140.7265625,845.5385386149088,140.7265625,853.8718719482422C140.7265625,862.2052052815756,140.7265625,870.5385386149088,140.7265625,878.8718719482422C140.7265625,887.2052052815756,140.7265625,895.5385386149088,140.7265625,903.8718719482422C140.7265625,912.2052052815756,140.7265625,920.5385386149088,140.7265625,924.7052052815756L140.7265625,928.8718719482422" marker-end="url(#arrowhead192)" style="fill:none"></path><defs><marker id="arrowhead192" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-I" id="L-D-I" style="opacity: 1;"><path class="path" d="M682.94921875,996.8718719482422L682.94921875,1001.0385386149088C682.94921875,1005.2052052815756,682.94921875,1013.5385386149088,682.94921875,1021.8718719482422C682.94921875,1030.2052052815754,682.94921875,1038.538538614909,682.94921875,1046.8718719482422C682.94921875,1055.2052052815754,682.94921875,1063.538538614909,682.94921875,1071.8718719482422C682.94921875,1080.2052052815754,682.94921875,1088.538538614909,682.94921875,1096.8718719482422C682.94921875,1105.2052052815754,682.94921875,1113.538538614909,682.94921875,1121.8718719482422C682.94921875,1130.2052052815754,682.94921875,1138.538538614909,682.94921875,1142.7052052815754L682.94921875,1146.8718719482422" marker-end="url(#arrowhead193)" style="fill:none"></path><defs><marker id="arrowhead193" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-I LE-J" id="L-I-J" style="opacity: 1;"><path class="path" d="M682.94921875,1214.8718719482422L682.94921875,1219.038538614909C682.94921875,1223.2052052815754,682.94921875,1231.538538614909,682.94921875,1239.8718719482422C682.94921875,1248.2052052815754,682.94921875,1256.538538614909,682.94921875,1264.8718719482422C682.94921875,1273.2052052815754,682.94921875,1281.538538614909,682.94921875,1289.8718719482422C682.94921875,1298.2052052815754,682.94921875,1306.538538614909,682.94921875,1314.8718719482422C682.94921875,1323.2052052815754,682.94921875,1331.538538614909,682.94921875,1339.8718719482422C682.94921875,1348.2052052815754,682.94921875,1356.538538614909,682.94921875,1360.7052052815754L682.94921875,1364.8718719482422" marker-end="url(#arrowhead194)" style="fill:none"></path><defs><marker id="arrowhead194" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-F" id="L-B-F" style="opacity: 1;"><path class="path" d="M465.9800724436004,373.18086658227884L476.1858676613337,386.9627008099394C486.3916628790669,400.7445350376,506.8032533145335,428.3082034929211,517.0090485322668,448.25670438724825C527.21484375,468.2052052815755,527.21484375,480.5385386149089,527.21484375,486.7052052815755L527.21484375,492.8718719482422" marker-end="url(#arrowhead195)" style="fill:none"></path><defs><marker id="arrowhead195" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-F LE-G" id="L-F-G" style="opacity: 1;"><path class="path" d="M543.88671875,519.599787475724L568.73046875,526.6451348878104C593.57421875,533.6904822998968,643.26171875,547.7811771240695,668.10546875,560.9931912028225C692.94921875,574.2052052815756,692.94921875,586.5385386149088,692.94921875,598.8718719482422C692.94921875,611.2052052815756,692.94921875,623.5385386149088,692.94921875,633.8718719482422C692.94921875,644.2052052815756,692.94921875,652.5385386149088,692.94921875,660.8718719482422C692.94921875,669.2052052815756,692.94921875,677.5385386149088,692.94921875,685.8718719482422C692.94921875,694.2052052815756,692.94921875,702.5385386149088,692.94921875,706.7052052815756L692.94921875,710.8718719482422" marker-end="url(#arrowhead196)" style="fill:none"></path><defs><marker id="arrowhead196" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-F LE-H" id="L-F-H" style="opacity: 1;"><path class="path" d="M510.54296875,519.4639558252653L484.8821614583333,526.5319418457615C459.2213541666667,533.5999278662576,407.8997395833333,547.7358999072499,382.2389322916667,560.9705525944127C356.578125,574.2052052815756,356.578125,586.5385386149088,356.578125,598.8718719482422C356.578125,611.2052052815756,356.578125,623.5385386149088,356.578125,633.8718719482422C356.578125,644.2052052815756,356.578125,652.5385386149088,356.578125,660.8718719482422C356.578125,669.2052052815756,356.578125,677.5385386149088,356.578125,685.8718719482422C356.578125,694.2052052815756,356.578125,702.5385386149088,356.578125,706.7052052815756L356.578125,710.8718719482422" marker-end="url(#arrowhead197)" style="fill:none"></path><defs><marker id="arrowhead197" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-G LE-D" id="L-G-D" style="opacity: 1;"><path class="path" d="M692.94921875,778.8718719482422L692.94921875,783.0385386149088C692.94921875,787.2052052815756,692.94921875,795.5385386149088,692.94921875,803.8718719482422C692.94921875,812.2052052815756,692.94921875,820.5385386149088,692.94921875,828.8718719482422C692.94921875,837.2052052815756,692.94921875,845.5385386149088,692.94921875,853.8718719482422C692.94921875,862.2052052815756,692.94921875,870.5385386149088,692.94921875,878.8718719482422C692.94921875,887.2052052815756,692.94921875,895.5385386149088,692.2430040607345,903.8718719482422C691.5367893714689,912.2052052815756,690.1243599929379,920.5385386149088,689.4181453036723,924.7052052815756L688.7119306144068,928.8718719482422" marker-end="url(#arrowhead198)" style="fill:none"></path><defs><marker id="arrowhead198" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-H LE-E" id="L-H-E" style="opacity: 1;"><path class="path" d="M356.578125,778.8718719482422L356.578125,783.0385386149088C356.578125,787.2052052815756,356.578125,795.5385386149088,356.578125,803.8718719482422C356.578125,812.2052052815756,356.578125,820.5385386149088,356.578125,828.8718719482422C356.578125,837.2052052815756,356.578125,845.5385386149088,356.578125,853.8718719482422C356.578125,862.2052052815756,356.578125,870.5385386149088,356.578125,878.8718719482422C356.578125,887.2052052815756,356.578125,895.5385386149088,341.3343705861582,903.8718719482422C326.0906161723164,912.2052052815756,295.60310734463275,920.5385386149088,280.359352930791,924.7052052815756L265.11559851694915,928.8718719482422" marker-end="url(#arrowhead199)" style="fill:none"></path><defs><marker id="arrowhead199" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-E LE-K" id="L-E-K" style="opacity: 1;"><path class="path" d="M140.7265625,996.8718719482422L140.7265625,1001.0385386149088C140.7265625,1005.2052052815756,140.7265625,1013.5385386149088,140.7265625,1021.8718719482422C140.7265625,1030.2052052815754,140.7265625,1038.538538614909,140.7265625,1046.8718719482422C140.7265625,1055.2052052815754,140.7265625,1063.538538614909,140.7265625,1071.8718719482422C140.7265625,1080.2052052815754,140.7265625,1088.538538614909,140.7265625,1096.8718719482422C140.7265625,1105.2052052815754,140.7265625,1113.538538614909,140.7265625,1127.538538614909C140.7265625,1141.538538614909,140.7265625,1161.2052052815754,140.7265625,1180.8718719482422C140.7265625,1200.538538614909,140.7265625,1220.2052052815754,140.7265625,1234.2052052815754C140.7265625,1248.2052052815754,140.7265625,1256.538538614909,140.7265625,1264.8718719482422C140.7265625,1273.2052052815754,140.7265625,1281.538538614909,140.7265625,1289.8718719482422C140.7265625,1298.2052052815754,140.7265625,1306.538538614909,140.7265625,1314.8718719482422C140.7265625,1323.2052052815754,140.7265625,1331.538538614909,140.7265625,1345.538538614909C140.7265625,1359.538538614909,140.7265625,1379.2052052815754,140.7265625,1398.8718719482422C140.7265625,1418.538538614909,140.7265625,1438.2052052815754,140.7265625,1452.2052052815754C140.7265625,1466.2052052815754,140.7265625,1474.538538614909,140.7265625,1482.8718719482422C140.7265625,1491.2052052815754,140.7265625,1499.538538614909,140.7265625,1507.8718719482422C140.7265625,1516.2052052815754,140.7265625,1524.538538614909,140.7265625,1532.8718719482422C140.7265625,1541.2052052815754,140.7265625,1549.538538614909,160.3990554378531,1557.8718719482422C180.07154837570621,1566.2052052815754,219.4165342514124,1574.538538614909,239.08902718926552,1578.7052052815754L258.7615201271186,1582.8718719482422" marker-end="url(#arrowhead200)" style="fill:none"></path><defs><marker id="arrowhead200" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-K LE-L" id="L-K-L" style="opacity: 1;"><path class="path" d="M419.2890625,1650.8718719482422L419.2890625,1655.038538614909C419.2890625,1659.2052052815754,419.2890625,1667.538538614909,419.2890625,1675.8718719482422C419.2890625,1684.2052052815754,419.2890625,1692.538538614909,419.2890625,1700.8718719482422C419.2890625,1709.2052052815754,419.2890625,1717.538538614909,419.2890625,1725.8718719482422C419.2890625,1734.2052052815754,419.2890625,1742.538538614909,419.2890625,1750.8718719482422C419.2890625,1759.2052052815754,419.2890625,1767.538538614909,419.2890625,1775.8718719482422C419.2890625,1784.2052052815754,419.2890625,1792.538538614909,419.2890625,1796.7052052815754L419.2890625,1800.8718719482422" marker-end="url(#arrowhead201)" style="fill:none"></path><defs><marker id="arrowhead201" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-J LE-K" id="L-J-K" style="opacity: 1;"><path class="path" d="M682.94921875,1432.8718719482422L682.94921875,1437.038538614909C682.94921875,1441.2052052815754,682.94921875,1449.538538614909,682.94921875,1457.8718719482422C682.94921875,1466.2052052815754,682.94921875,1474.538538614909,682.94921875,1482.8718719482422C682.94921875,1491.2052052815754,682.94921875,1499.538538614909,682.94921875,1507.8718719482422C682.94921875,1516.2052052815754,682.94921875,1524.538538614909,682.94921875,1532.8718719482422C682.94921875,1541.2052052815754,682.94921875,1549.538538614909,664.3291512182203,1557.8718719482422C645.7090836864407,1566.2052052815754,608.4689486228814,1574.538538614909,589.8488810911017,1578.7052052815754L571.228813559322,1582.8718719482422" marker-end="url(#arrowhead202)" style="fill:none"></path><defs><marker id="arrowhead202" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-L LE-M" id="L-L-M" style="opacity: 1;"><path class="path" d="M419.2890625,1868.8718719482422L419.2890625,1873.038538614909C419.2890625,1877.2052052815754,419.2890625,1885.538538614909,419.2890625,1893.8718719482422C419.2890625,1902.2052052815754,419.2890625,1910.538538614909,419.2890625,1918.8718719482422C419.2890625,1927.2052052815754,419.2890625,1935.538538614909,419.2890625,1943.8718719482422C419.2890625,1952.2052052815754,419.2890625,1960.538538614909,419.2890625,1968.8718719482422C419.2890625,1977.2052052815754,419.2890625,1985.538538614909,419.2890625,1993.8718719482422C419.2890625,2002.2052052815754,419.2890625,2010.538538614909,419.2890625,2014.7052052815754L419.2890625,2018.8718719482422" marker-end="url(#arrowhead203)" style="fill:none"></path><defs><marker id="arrowhead203" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(140.7265625,598.8718719482422)" style="opacity: 1;"><g transform="translate(-14.6796875,-12)" class="label"><rect rx="0" ry="0" width="29.359375" height="24"></rect><foreignObject width="29.359375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-C" class="edgeLabel L-LS-B' L-LE-C">Nee</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-E" class="edgeLabel L-LS-C' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-I" class="edgeLabel L-LS-D' L-LE-I"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-I-J" class="edgeLabel L-LS-I' L-LE-J"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(527.21484375,455.8718719482422)" style="opacity: 1;"><g transform="translate(-8.453125,-12)" class="label"><rect rx="0" ry="0" width="16.90625" height="24"></rect><foreignObject width="16.90625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-F" class="edgeLabel L-LS-B' L-LE-F">Ja</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-F-G" class="edgeLabel L-LS-F' L-LE-G"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-F-H" class="edgeLabel L-LS-F' L-LE-H"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-G-D" class="edgeLabel L-LS-G' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-H-E" class="edgeLabel L-LS-H' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-E-K" class="edgeLabel L-LS-E' L-LE-K"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-K-L" class="edgeLabel L-LS-K' L-LE-L"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-J-K" class="edgeLabel L-LS-J' L-LE-K"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-L-M" class="edgeLabel L-LS-L' L-LE-M"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-30" transform="translate(419.2890625,30)" style="opacity: 1;"><rect rx="22" ry="22" x="-32.3984375" y="-22" width="64.796875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-16.8984375,-12)"><foreignObject width="33.796875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Start</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-31" transform="translate(419.2890625,310.4359359741211)" style="opacity: 1;"><polygon points="108.43593750000001,0 216.87187500000002,-108.43593750000001 108.43593750000001,-216.87187500000002 0,-108.43593750000001" transform="translate(-108.43593750000001,108.43593750000001)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-52.484375,-48)"><foreignObject width="104.96875" height="96"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>1</b><br>Eerste versie<br>van Respec<br>documentatie?</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-33" transform="translate(140.7265625,744.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-16.671875" y="-22" width="33.34375" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-6.671875,-12)"><foreignObject width="13.34375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">...</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-35" transform="translate(682.94921875,962.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-158.546875" y="-34" width="317.09375" height="68" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-148.546875,-24)"><foreignObject width="297.09375" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>3</b><br>Creëer nieuwe content of pas content aan</div></foreignObject></g></g></g><g class="node default" id="flowchart-E-37" transform="translate(140.7265625,962.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-132.7265625" y="-34" width="265.453125" height="68" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-122.7265625,-24)"><foreignObject width="245.453125" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>7</b><br>Pas basisstructuur aan voor versie</div></foreignObject></g></g></g><g class="node default" id="flowchart-I-39" transform="translate(682.94921875,1180.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-89.59375" y="-34" width="179.1875" height="68" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-79.59375,-24)"><foreignObject width="159.1875" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>4</b><br>Assembleer document</div></foreignObject></g></g></g><g class="node default" id="flowchart-J-41" transform="translate(682.94921875,1398.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-158.09375" y="-34" width="316.1875" height="68" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-148.09375,-24)"><foreignObject width="296.1875" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>5</b><br>Pas document configuratie properties aan</div></foreignObject></g></g></g><g class="node default" id="flowchart-F-43" transform="translate(527.21484375,514.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-16.671875" y="-22" width="33.34375" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-6.671875,-12)"><foreignObject width="13.34375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">...</div></foreignObject></g></g></g><g class="node default" id="flowchart-G-45" transform="translate(692.94921875,744.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-132.2890625" y="-34" width="264.578125" height="68" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-122.2890625,-24)"><foreignObject width="244.578125" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>2</b><br>Creëer en configureer project repo</div></foreignObject></g></g></g><g class="node default" id="flowchart-H-47" transform="translate(356.578125,744.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-149.1796875" y="-34" width="298.359375" height="68" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-139.1796875,-24)"><foreignObject width="278.359375" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>6</b><br>Creëer basisstructuur in publicatie repo</div></foreignObject></g></g></g><g class="node default" id="flowchart-K-53" transform="translate(419.2890625,1616.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-193.2421875" y="-34" width="386.484375" height="68" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-183.2421875,-24)"><foreignObject width="366.484375" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>8</b><br>Plaats gegenereerde documenten in publicatie repo</div></foreignObject></g></g></g><g class="node default" id="flowchart-L-55" transform="translate(419.2890625,1834.8718719482422)" style="opacity: 1;"><rect rx="5" ry="5" x="-180.3125" y="-34" width="360.625" height="68" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-170.3125,-24)"><foreignObject width="340.625" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>9</b><br>Gebruik publicatie link Respec doc in GH Pages</div></foreignObject></g></g></g><g class="node default" id="flowchart-M-59" transform="translate(419.2890625,2040.8718719482422)" style="opacity: 1;"><rect rx="22" ry="22" x="-31.9609375" y="-22" width="63.921875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-16.4609375,-12)"><foreignObject width="32.921875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Stop</div></foreignObject></g></g></g></g></g></g></svg></pre>
+</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M419.2890625,46L419.2890625,50.166666666666664C419.2890625,54.333333333333336,419.2890625,62.666666666666664,419.2890625,71C419.2890625,79.33333333333333,419.2890625,87.66666666666667,419.2890625,96C419.2890625,104.33333333333333,419.2890625,112.66666666666667,419.2890625,121C419.2890625,129.33333333333334,419.2890625,137.66666666666666,419.2890625,146C419.2890625,154.33333333333334,419.2890625,162.66666666666666,419.3723958333333,171.08333384195964C419.4557291666667,179.50000101725257,419.6223958333333,188.00000203450517,419.7057291666667,192.25000254313147L419.7890625,196.50000305175777" marker-end="url(#arrowhead189)" style="fill:none"></path><defs><marker id="arrowhead189" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-C" id="L-B-C" style="opacity: 1;"><path class="path" d="M353.48527352591196,325.46808907766984L318.0254883549266,342.1020544153109C282.5657031839413,358.7360197529518,211.64613284197063,392.00395042823374,176.18634767098533,417.471249099208C140.7265625,442.9385477701823,140.7265625,460.60521443684894,140.7265625,476.7718811035156C140.7265625,492.9385477701823,140.7265625,507.60521443684894,140.7265625,520.605214436849C140.7265625,533.605214436849,140.7265625,544.9385477701823,140.7265625,556.2718811035156C140.7265625,567.605214436849,140.7265625,578.9385477701823,140.7265625,588.7718811035156C140.7265625,598.605214436849,140.7265625,606.9385477701823,140.7265625,615.2718811035156C140.7265625,623.605214436849,140.7265625,631.9385477701823,140.7265625,641.7718811035156C140.7265625,651.605214436849,140.7265625,662.9385477701823,140.7265625,668.605214436849L140.7265625,674.2718811035156" marker-end="url(#arrowhead190)" style="fill:none"></path><defs><marker id="arrowhead190" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M157.3984375,695.587504631964L218.21744791666666,704.0349007105559C279.0364583333333,712.4822967891478,400.6744791666667,729.3770889463317,461.4934895833333,741.9911516915903C522.3125,754.605214436849,522.3125,762.9385477701823,522.3125,771.2718811035156C522.3125,779.605214436849,522.3125,787.9385477701823,522.3125,796.2718811035156C522.3125,804.605214436849,522.3125,812.9385477701823,522.3125,821.2718811035156C522.3125,829.605214436849,522.3125,837.9385477701823,534.9411728577044,846.2718811035156C547.5698457154089,854.605214436849,572.8271914308176,862.9385477701823,585.4558642885221,867.105214436849L598.0845371462265,871.2718811035156" marker-end="url(#arrowhead191)" style="fill:none"></path><defs><marker id="arrowhead191" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-E" id="L-C-E" style="opacity: 1;"><path class="path" d="M140.7265625,712.2718811035156L140.7265625,717.9385477701823C140.7265625,723.605214436849,140.7265625,734.9385477701823,140.7265625,744.7718811035156C140.7265625,754.605214436849,140.7265625,762.9385477701823,140.7265625,771.2718811035156C140.7265625,779.605214436849,140.7265625,787.9385477701823,140.7265625,796.2718811035156C140.7265625,804.605214436849,140.7265625,812.9385477701823,140.7265625,821.2718811035156C140.7265625,829.605214436849,140.7265625,837.9385477701823,140.7265625,846.2718811035156C140.7265625,854.605214436849,140.7265625,862.9385477701823,140.7265625,867.105214436849L140.7265625,871.2718811035156" marker-end="url(#arrowhead192)" style="fill:none"></path><defs><marker id="arrowhead192" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-I" id="L-D-I" style="opacity: 1;"><path class="path" d="M682.94921875,927.2718811035156L682.94921875,931.4385477701823C682.94921875,935.605214436849,682.94921875,943.9385477701823,682.94921875,952.2718811035156C682.94921875,960.605214436849,682.94921875,968.9385477701823,682.94921875,977.2718811035156C682.94921875,985.605214436849,682.94921875,993.9385477701823,682.94921875,1002.2718811035156C682.94921875,1010.605214436849,682.94921875,1018.9385477701823,682.94921875,1027.2718811035156C682.94921875,1035.6052144368489,682.94921875,1043.9385477701824,682.94921875,1052.2718811035156C682.94921875,1060.6052144368489,682.94921875,1068.9385477701824,682.94921875,1073.1052144368489L682.94921875,1077.2718811035156" marker-end="url(#arrowhead193)" style="fill:none"></path><defs><marker id="arrowhead193" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-I LE-J" id="L-I-J" style="opacity: 1;"><path class="path" d="M682.94921875,1133.2718811035156L682.94921875,1137.4385477701824C682.94921875,1141.6052144368489,682.94921875,1149.9385477701824,682.94921875,1158.2718811035156C682.94921875,1166.6052144368489,682.94921875,1174.9385477701824,682.94921875,1183.2718811035156C682.94921875,1191.6052144368489,682.94921875,1199.9385477701824,682.94921875,1208.2718811035156C682.94921875,1216.6052144368489,682.94921875,1224.9385477701824,682.94921875,1233.2718811035156C682.94921875,1241.6052144368489,682.94921875,1249.9385477701824,682.94921875,1258.2718811035156C682.94921875,1266.6052144368489,682.94921875,1274.9385477701824,682.94921875,1279.1052144368489L682.94921875,1283.2718811035156" marker-end="url(#arrowhead194)" style="fill:none"></path><defs><marker id="arrowhead194" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-F" id="L-B-F" style="opacity: 1;"><path class="path" d="M463.77536421291273,347.78557023532954L474.34861080242723,360.69995538002723C484.92185739194184,373.61434052472487,506.06835057097095,399.44311081412025,516.6415971604855,418.0241626254846C527.21484375,436.60521443684894,527.21484375,447.9385477701823,527.21484375,453.60521443684894L527.21484375,459.2718811035156" marker-end="url(#arrowhead195)" style="fill:none"></path><defs><marker id="arrowhead195" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-F LE-G" id="L-F-G" style="opacity: 1;"><path class="path" d="M543.88671875,482.6980147888178L568.73046875,489.2936591746008C593.57421875,495.8893035603837,643.26171875,509.0805923319497,668.10546875,521.3429033843994C692.94921875,533.605214436849,692.94921875,544.9385477701823,692.94921875,556.2718811035156C692.94921875,567.605214436849,692.94921875,578.9385477701823,692.94921875,588.7718811035156C692.94921875,598.605214436849,692.94921875,606.9385477701823,692.94921875,615.2718811035156C692.94921875,623.605214436849,692.94921875,631.9385477701823,692.94921875,640.2718811035156C692.94921875,648.605214436849,692.94921875,656.9385477701823,692.94921875,661.105214436849L692.94921875,665.2718811035156" marker-end="url(#arrowhead196)" style="fill:none"></path><defs><marker id="arrowhead196" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-F LE-H" id="L-F-H" style="opacity: 1;"><path class="path" d="M510.54296875,482.57085324370746L484.8821614583333,489.1876912203422C459.2213541666667,495.80452919697683,407.8997395833333,509.03820515024626,382.2389322916667,521.3217097935476C356.578125,533.605214436849,356.578125,544.9385477701823,356.578125,556.2718811035156C356.578125,567.605214436849,356.578125,578.9385477701823,356.578125,588.7718811035156C356.578125,598.605214436849,356.578125,606.9385477701823,356.578125,615.2718811035156C356.578125,623.605214436849,356.578125,631.9385477701823,356.578125,640.2718811035156C356.578125,648.605214436849,356.578125,656.9385477701823,356.578125,661.105214436849L356.578125,665.2718811035156" marker-end="url(#arrowhead197)" style="fill:none"></path><defs><marker id="arrowhead197" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-G LE-D" id="L-G-D" style="opacity: 1;"><path class="path" d="M692.94921875,721.2718811035156L692.94921875,725.4385477701823C692.94921875,729.605214436849,692.94921875,737.9385477701823,692.94921875,746.2718811035156C692.94921875,754.605214436849,692.94921875,762.9385477701823,692.94921875,771.2718811035156C692.94921875,779.605214436849,692.94921875,787.9385477701823,692.94921875,796.2718811035156C692.94921875,804.605214436849,692.94921875,812.9385477701823,692.94921875,821.2718811035156C692.94921875,829.605214436849,692.94921875,837.9385477701823,692.1630552279875,846.2718811035156C691.3768917059748,854.605214436849,689.8045646619497,862.9385477701823,689.018401139937,867.105214436849L688.2322376179245,871.2718811035156" marker-end="url(#arrowhead198)" style="fill:none"></path><defs><marker id="arrowhead198" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-H LE-E" id="L-H-E" style="opacity: 1;"><path class="path" d="M356.578125,721.2718811035156L356.578125,725.4385477701823C356.578125,729.605214436849,356.578125,737.9385477701823,356.578125,746.2718811035156C356.578125,754.605214436849,356.578125,762.9385477701823,356.578125,771.2718811035156C356.578125,779.605214436849,356.578125,787.9385477701823,356.578125,796.2718811035156C356.578125,804.605214436849,356.578125,812.9385477701823,356.578125,821.2718811035156C356.578125,829.605214436849,356.578125,837.9385477701823,339.60866253930817,846.2718811035156C322.63920007861634,854.605214436849,288.7002751572327,862.9385477701823,271.73081269654085,867.105214436849L254.76135023584905,871.2718811035156" marker-end="url(#arrowhead199)" style="fill:none"></path><defs><marker id="arrowhead199" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-E LE-K" id="L-E-K" style="opacity: 1;"><path class="path" d="M140.7265625,927.2718811035156L140.7265625,931.4385477701823C140.7265625,935.605214436849,140.7265625,943.9385477701823,140.7265625,952.2718811035156C140.7265625,960.605214436849,140.7265625,968.9385477701823,140.7265625,977.2718811035156C140.7265625,985.605214436849,140.7265625,993.9385477701823,140.7265625,1002.2718811035156C140.7265625,1010.605214436849,140.7265625,1018.9385477701823,140.7265625,1027.2718811035156C140.7265625,1035.6052144368489,140.7265625,1043.9385477701824,140.7265625,1056.9385477701824C140.7265625,1069.9385477701824,140.7265625,1087.6052144368489,140.7265625,1105.2718811035156C140.7265625,1122.9385477701824,140.7265625,1140.6052144368489,140.7265625,1153.6052144368489C140.7265625,1166.6052144368489,140.7265625,1174.9385477701824,140.7265625,1183.2718811035156C140.7265625,1191.6052144368489,140.7265625,1199.9385477701824,140.7265625,1208.2718811035156C140.7265625,1216.6052144368489,140.7265625,1224.9385477701824,140.7265625,1233.2718811035156C140.7265625,1241.6052144368489,140.7265625,1249.9385477701824,140.7265625,1262.9385477701824C140.7265625,1275.9385477701824,140.7265625,1293.6052144368489,140.7265625,1311.2718811035156C140.7265625,1328.9385477701824,140.7265625,1346.6052144368489,140.7265625,1359.6052144368489C140.7265625,1372.6052144368489,140.7265625,1380.9385477701824,140.7265625,1389.2718811035156C140.7265625,1397.6052144368489,140.7265625,1405.9385477701824,140.7265625,1414.2718811035156C140.7265625,1422.6052144368489,140.7265625,1430.9385477701824,140.7265625,1439.2718811035156C140.7265625,1447.6052144368489,140.7265625,1455.9385477701824,162.6261301100629,1464.2718811035156C184.52569772012578,1472.6052144368489,228.32483294025155,1480.9385477701824,250.22440055031447,1485.1052144368489L272.12396816037733,1489.2718811035156" marker-end="url(#arrowhead200)" style="fill:none"></path><defs><marker id="arrowhead200" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-K LE-L" id="L-K-L" style="opacity: 1;"><path class="path" d="M419.2890625,1545.2718811035156L419.2890625,1549.4385477701824C419.2890625,1553.6052144368489,419.2890625,1561.9385477701824,419.2890625,1570.2718811035156C419.2890625,1578.6052144368489,419.2890625,1586.9385477701824,419.2890625,1595.2718811035156C419.2890625,1603.6052144368489,419.2890625,1611.9385477701824,419.2890625,1620.2718811035156C419.2890625,1628.6052144368489,419.2890625,1636.9385477701824,419.2890625,1645.2718811035156C419.2890625,1653.6052144368489,419.2890625,1661.9385477701824,419.2890625,1670.2718811035156C419.2890625,1678.6052144368489,419.2890625,1686.9385477701824,419.2890625,1691.1052144368489L419.2890625,1695.2718811035156" marker-end="url(#arrowhead201)" style="fill:none"></path><defs><marker id="arrowhead201" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-J LE-K" id="L-J-K" style="opacity: 1;"><path class="path" d="M682.94921875,1339.2718811035156L682.94921875,1343.4385477701824C682.94921875,1347.6052144368489,682.94921875,1355.9385477701824,682.94921875,1364.2718811035156C682.94921875,1372.6052144368489,682.94921875,1380.9385477701824,682.94921875,1389.2718811035156C682.94921875,1397.6052144368489,682.94921875,1405.9385477701824,682.94921875,1414.2718811035156C682.94921875,1422.6052144368489,682.94921875,1430.9385477701824,682.94921875,1439.2718811035156C682.94921875,1447.6052144368489,682.94921875,1455.9385477701824,662.2212190448113,1464.2718811035156C641.4932193396227,1472.6052144368489,600.0372199292452,1480.9385477701824,579.3092202240565,1485.1052144368489L558.5812205188679,1489.2718811035156" marker-end="url(#arrowhead202)" style="fill:none"></path><defs><marker id="arrowhead202" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-L LE-M" id="L-L-M" style="opacity: 1;"><path class="path" d="M419.2890625,1751.2718811035156L419.2890625,1755.4385477701824C419.2890625,1759.6052144368489,419.2890625,1767.9385477701824,419.2890625,1776.2718811035156C419.2890625,1784.6052144368489,419.2890625,1792.9385477701824,419.2890625,1801.2718811035156C419.2890625,1809.6052144368489,419.2890625,1817.9385477701824,419.2890625,1826.2718811035156C419.2890625,1834.6052144368489,419.2890625,1842.9385477701824,419.2890625,1851.2718811035156C419.2890625,1859.6052144368489,419.2890625,1867.9385477701824,419.2890625,1876.2718811035156C419.2890625,1884.6052144368489,419.2890625,1892.9385477701824,419.2890625,1897.1052144368489L419.2890625,1901.2718811035156" marker-end="url(#arrowhead203)" style="fill:none"></path><defs><marker id="arrowhead203" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(140.7265625,556.2718811035156)" style="opacity: 1;"><g transform="translate(-14.6796875,-9)" class="label"><rect rx="0" ry="0" width="29.359375" height="18"></rect><foreignObject width="29.359375" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-C" class="edgeLabel L-LS-B' L-LE-C">Nee</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-E" class="edgeLabel L-LS-C' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-I" class="edgeLabel L-LS-D' L-LE-I"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-I-J" class="edgeLabel L-LS-I' L-LE-J"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(527.21484375,425.2718811035156)" style="opacity: 1;"><g transform="translate(-8.453125,-9)" class="label"><rect rx="0" ry="0" width="16.90625" height="18"></rect><foreignObject width="16.90625" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-F" class="edgeLabel L-LS-B' L-LE-F">Ja</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-F-G" class="edgeLabel L-LS-F' L-LE-G"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-F-H" class="edgeLabel L-LS-F' L-LE-H"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-G-D" class="edgeLabel L-LS-G' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-H-E" class="edgeLabel L-LS-H' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-E-K" class="edgeLabel L-LS-E' L-LE-K"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-K-L" class="edgeLabel L-LS-K' L-LE-L"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-J-K" class="edgeLabel L-LS-J' L-LE-K"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-L-M" class="edgeLabel L-LS-L' L-LE-M"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-30" transform="translate(419.2890625,27)" style="opacity: 1;"><rect rx="19" ry="19" x="-31.6484375" y="-19" width="63.296875" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-16.8984375,-9)"><foreignObject width="33.796875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Start</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-31" transform="translate(419.2890625,293.6359405517578)" style="opacity: 1;"><polygon points="97.6359375,0 195.271875,-97.6359375 97.6359375,-195.271875 0,-97.6359375" transform="translate(-97.6359375,97.6359375)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-52.484375,-36)"><foreignObject width="104.96875" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>1</b><br>Eerste versie<br>van Respec<br>documentatie?</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-33" transform="translate(140.7265625,693.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-16.671875" y="-19" width="33.34375" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-6.671875,-9)"><foreignObject width="13.34375" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">...</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-35" transform="translate(682.94921875,899.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-158.546875" y="-28" width="317.09375" height="56" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-148.546875,-18)"><foreignObject width="297.09375" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>3</b><br>Creëer nieuwe content of pas content aan</div></foreignObject></g></g></g><g class="node default" id="flowchart-E-37" transform="translate(140.7265625,899.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-132.7265625" y="-28" width="265.453125" height="56" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-122.7265625,-18)"><foreignObject width="245.453125" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>7</b><br>Pas basisstructuur aan voor versie</div></foreignObject></g></g></g><g class="node default" id="flowchart-I-39" transform="translate(682.94921875,1105.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-89.59375" y="-28" width="179.1875" height="56" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-79.59375,-18)"><foreignObject width="159.1875" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>4</b><br>Assembleer document</div></foreignObject></g></g></g><g class="node default" id="flowchart-J-41" transform="translate(682.94921875,1311.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-158.09375" y="-28" width="316.1875" height="56" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-148.09375,-18)"><foreignObject width="296.1875" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>5</b><br>Pas document configuratie properties aan</div></foreignObject></g></g></g><g class="node default" id="flowchart-F-43" transform="translate(527.21484375,478.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-16.671875" y="-19" width="33.34375" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-6.671875,-9)"><foreignObject width="13.34375" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">...</div></foreignObject></g></g></g><g class="node default" id="flowchart-G-45" transform="translate(692.94921875,693.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-132.2890625" y="-28" width="264.578125" height="56" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-122.2890625,-18)"><foreignObject width="244.578125" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>2</b><br>Creëer en configureer project repo</div></foreignObject></g></g></g><g class="node default" id="flowchart-H-47" transform="translate(356.578125,693.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-149.1796875" y="-28" width="298.359375" height="56" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-139.1796875,-18)"><foreignObject width="278.359375" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>6</b><br>Creëer basisstructuur in publicatie repo</div></foreignObject></g></g></g><g class="node default" id="flowchart-K-53" transform="translate(419.2890625,1517.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-193.2421875" y="-28" width="386.484375" height="56" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-183.2421875,-18)"><foreignObject width="366.484375" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>8</b><br>Plaats gegenereerde documenten in publicatie repo</div></foreignObject></g></g></g><g class="node default" id="flowchart-L-55" transform="translate(419.2890625,1723.2718811035156)" style="opacity: 1;"><rect rx="5" ry="5" x="-180.3125" y="-28" width="360.625" height="56" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-170.3125,-18)"><foreignObject width="340.625" height="36"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><b>9</b><br>Gebruik publicatie link Respec doc in GH Pages</div></foreignObject></g></g></g><g class="node default" id="flowchart-M-59" transform="translate(419.2890625,1920.2718811035156)" style="opacity: 1;"><rect rx="19" ry="19" x="-31.2109375" y="-19" width="62.421875" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-16.4609375,-9)"><foreignObject width="32.921875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Stop</div></foreignObject></g></g></g></g></g></g></svg></pre>
 <figcaption><a class="self-link" href="#fig-het-vng-r-respec-proces-mermaid-voorbeeld">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Het VNG-R Respec proces (Mermaid voorbeeld)</span></figcaption>
-</figure></section><section class="informative" id="niet-normatieve-deel"><h2 id="x7-niet-normatieve-deel"><bdi class="secno">7. </bdi>Niet-normatieve deel</h2><p><em>Dit onderdeel is niet normatief.</em></p>
+</figure></section><section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x7-niet-normatieve-deel"><bdi class="secno">7. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 7."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
 <p>Bijvoorbeeld een introductie.</p>
 <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
 Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div></section><section id="meer-inhoud"><h2 id="x8-meer-inhoud"><bdi class="secno">8. </bdi>Meer inhoud</h2>
-<section id="definities"><h3 id="x8-1-definities"><bdi class="secno">8.1 </bdi>Definities</h3>
+</p></div></section><section id="meer-inhoud"><div class="header-wrapper"><h2 id="x8-meer-inhoud"><bdi class="secno">8. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 8."></a></div>
+<section id="definities"><div class="header-wrapper"><h3 id="x8-1-definities"><bdi class="secno">8.1 </bdi>Definities</h3><a class="self-link" href="#definities" aria-label="Permalink for Section 8.1"></a></div>
 <p><dfn id="dfn-definitie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Definitie</dfn>: Een definitie is een beschrijving van een woord. Een ander woord voor definitie is betekenis of beschrijving.
 De notatiewijze voor het definiëeren van een definitie is als volgt:</p>
 <p>&lt;dfn&gt;Definitie&lt;/dfn&gt;</p>
 <p>Deze definities worden opgenomen in de bijlage 'Index'.</p>
-</section><section id="afbeeldingen"><h3 id="x8-2-afbeeldingen"><bdi class="secno">8.2 </bdi>Afbeeldingen</h3>
+</section><section id="afbeeldingen"><div class="header-wrapper"><h3 id="x8-2-afbeeldingen"><bdi class="secno">8.2 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 8.2"></a></div>
 <p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">10. </bdi>Lijst met figuren</a>.</p>
 <p>
       </p><figure id="fig-onderschrift">
@@ -1297,8 +1246,8 @@ De notatiewijze voor het definiëeren van een definitie is als volgt:</p>
         <figcaption><a class="self-link" href="#fig-onderschrift">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title">Onderschrift</span></figcaption>
       </figure>
     <p></p>
-</section><section id="referenties"><h3 id="x8-3-referenties"><bdi class="secno">8.3 </bdi>Referenties</h3>
-<p>Referentie uit globale [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-semver" title="Reference &quot;[SemVer]&quot; not found." id="respec-offender-reference-semver-not-found">SemVer</a></cite>] of lokale [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>] localBiblio lijst. Deze lijst staat in de  <code>organisation-config.js</code> of <code>config.js</code>, zie hieronder een voorbeeld. </p>
+</section><section id="referenties"><div class="header-wrapper"><h3 id="x8-3-referenties"><bdi class="secno">8.3 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 8.3"></a></div>
+<p>Referentie uit globale [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantisch Versioneren 2.0.0">SemVer</a></cite>] of lokale [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>] localBiblio lijst. Deze lijst staat in de  <code>organisation-config.js</code> of <code>config.js</code>, zie hieronder een voorbeeld. </p>
 <pre><code aria-busy="false" class="hljs css">  localBiblio: {
         <span class="hljs-string">"MIM"</span>: {
            <span class="hljs-string">"href"</span>: <span class="hljs-string">"https://docs.geostandaarden.nl/mim/mim/"</span>,
@@ -1312,7 +1261,7 @@ De notatiewijze voor het definiëeren van een definitie is als volgt:</p>
 <p>Alleen referenties die ook echt in de tekst voorkomen worden in de bijlage 'Referenties' getoond. De notatie voor het opnemen van een referentie is [ [xxxx] ].</p>
 <p>We gebruiken de notatie &lt;a&gt;xxxxx&lt;&lt;/a&gt; om een referentie naar een in het document aangebrachte definitie te creëren.
 Het resultaat ziet er dan bijv. zo <a href="#dfn-definitie" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-definitie-1">definitie</a> uit.</p>
-</section><section id="optioneel"><h3 id="x8-4-optioneel"><bdi class="secno">8.4 </bdi>Optioneel</h3>
+</section><section id="optioneel"><div class="header-wrapper"><h3 id="x8-4-optioneel"><bdi class="secno">8.4 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 8.4"></a></div>
 <p>De onderstaande secties (<em>Conformiteit</em> e.d.) zijn optioneel, zie <code>index.html</code>:</p>
 <pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"abstract"</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"abstract.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
@@ -1339,8 +1288,8 @@ Het resultaat ziet er dan bijv. zo <a href="#dfn-definitie" class="internalDFN" 
 
     document.getElementById("probl").insertAdjacentHTML('afterend', content);
   </script>
-  <section id="conformance"><h2 id="x9-conformiteit"><bdi class="secno">9. </bdi>Conformiteit</h2><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
-  <section id="tof"><h2 id="x10-lijst-met-figuren"><bdi class="secno">10. </bdi>Lijst met figuren</h2><ul class="tof">
+  <section id="conformance"><div class="header-wrapper"><h2 id="x9-conformiteit"><bdi class="secno">9. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 9."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="tof"><div class="header-wrapper"><h2 id="x10-lijst-met-figuren"><bdi class="secno">10. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 10."></a></div><ul class="tof">
         <li class="tofline">
     <a class="tocxref" href="#fig-generatedID"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title"></span></a>
   </li><li class="tofline">
@@ -1351,15 +1300,15 @@ Het resultaat ziet er dan bijv. zo <a href="#dfn-definitie" class="internalDFN" 
     <a class="tocxref" href="#fig-onderschrift"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title">Onderschrift</span></a>
   </li>
       </ul></section>
-  <section id="index" class="appendix"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><section id="index-defined-here">
-    <h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3>
+  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
+    <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
     <ul class="index">
     <li>
       <a class="index-term" href="#dfn-definitie">Definitie</a> 
     <span class="print-only">§8.1</span></li>
   </ul>
   </section><section id="index-defined-elsewhere">
-    <h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3>
+    <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
     <ul class="index">
     
   </ul>
@@ -1367,12 +1316,12 @@ Het resultaat ziet er dan bijv. zo <a href="#dfn-definitie" class="internalDFN" 
 
 
 
-<section id="references" class="appendix"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><section id="normatieve-referenties">
-    <h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3>
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
+    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
     <dl class="bibliography"><dt id="bib-mim">[MIM]</dt><dd>
-      <a href="https://docs.geostandaarden.nl/mim/mim/"><cite>MIM - Metamodel Informatie Modellering</cite></a>.  Geonovum. Oktober 2013. URL: <a href="https://docs.geostandaarden.nl/mim/mim/">https://docs.geostandaarden.nl/mim/mim/</a>
+      <a href="https://docs.geostandaarden.nl/mim/mim/"><cite>MIM - Metamodel Informatie Modellering</cite></a>.  Geonovum. Oktober 2023. URL: <a href="https://docs.geostandaarden.nl/mim/mim/">https://docs.geostandaarden.nl/mim/mim/</a>
     </dd><dt id="bib-semver">[SemVer]</dt><dd>
-      <em class="respec-offending-element">Reference not found.</em>
+      <a href="https://semver.org/lang/nl/"><cite>Semantisch Versioneren 2.0.0</cite></a>. December 19, 2023. URL: <a href="https://semver.org/lang/nl/">https://semver.org/lang/nl/</a>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
@@ -1610,4 +1559,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel">VNG Realisatie Handreiking - In Gebruik versie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel">VNG Realisatie Handreiking - In Ontwikkeling versie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
