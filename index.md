@@ -2,8 +2,8 @@
 
 ## Handleiding gebruik respec-template
 
-[Huidige versie](https://vng-realisatie.github.io/publicatie/cim/respec-template/)<br/>
-[Versie 0.1.0](https://vng-realisatie.github.io/publicatie/cim/respec-template/0.1.0/)
+[Huidige versie](https://vng-realisatie.github.io/publicatie/hl/respec-template/)<br/>
+[Versie 0.1.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.1.0/)
 
 ## Respec documentatie VNG Realisatie standaarden
 
