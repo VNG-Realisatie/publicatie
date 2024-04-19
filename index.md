@@ -5,7 +5,7 @@
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/respec-template/)<br/>
 [Versie 0.1.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.1.0/)
 
-## Respec documentatie VNG Realisatie standaarden
+## VNG Realisatie standaarden
 
 ### Metamodel BerichtstructuurGegevens (MBG)
 
