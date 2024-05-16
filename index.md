@@ -3,15 +3,15 @@
 ## Handleiding gebruik respec-template
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/respec-template/)<br/>
-[Versie 0.1.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.1.0/)
+[Versie 0.1.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.1.0/) (In Ontwikkeling versie)
 
 ## VNG Realisatie standaarden
 
 ### Metamodel BerichtstructuurGegevens (MBG)
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/cim/mbg)<br/>
-[Versie 1.0.0](https://vng-realisatie.github.io/publicatie/cim/mbg/1.0.0)<br/>
-[Versie 0.9.0](https://vng-realisatie.github.io/publicatie/cim/mbg/0.9.0)
+[Versie 1.0.0](https://vng-realisatie.github.io/publicatie/cim/mbg/1.0.0) (In Gebruik versie)<br/>
+[Versie 0.9.0](https://vng-realisatie.github.io/publicatie/cim/mbg/0.9.0) (Consultatieversie)
 
 ## Informatiemodellen
 
