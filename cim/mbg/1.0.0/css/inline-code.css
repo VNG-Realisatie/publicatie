@@ -1,0 +1,17 @@
+/*-- Definite van code---------- -------------------------------------------------------*/
+code 
+{
+  font-weight: bold;
+  color:#205886;
+  background-color:#F7FAFD;
+  border-radius:4px;
+  padding: 3px;
+/*  font-family: lucida console;
+  font-size: 90%;*/
+}
+span.new
+{
+  font-weight: bold;
+  color:#e00;
+  background-color: #feffff;
+}
