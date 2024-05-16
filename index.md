@@ -10,9 +10,12 @@
 ### Metamodel BerichtstructuurGegevens (MBG)
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/cim/mbg)<br/>
+[Versie 1.0.0](https://vng-realisatie.github.io/publicatie/cim/mbg/1.0.0)<br/>
 [Versie 0.9.0](https://vng-realisatie.github.io/publicatie/cim/mbg/0.9.0)
 
-<!--## Open Raads Informatie
+## Informatiemodellen
+
+<!--### Open Raads Informatie
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/cim/ori/)<br/>
 [Versie 2.0.0](https://vng-realisatie.github.io/publicatie/cim/ori/2.0.0/)<br/>
