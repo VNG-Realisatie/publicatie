@@ -10,7 +10,7 @@
 ### Handleiding hWho
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/hWho/)<br/>
-[Versie 0.2.0](https://vng-realisatie.github.io/publicatie/hl/hWho/0.1.0/) (In Ontwikkeling versie)
+[Versie 0.1.0](https://vng-realisatie.github.io/publicatie/hl/hWho/0.1.0/) (In Ontwikkeling versie)
 
 ## VNG Realisatie standaarden
 
