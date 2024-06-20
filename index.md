@@ -7,7 +7,7 @@
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/respec-template/)<br/>
 [Versie 0.2.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.2.0/) (In Ontwikkeling versie)
 
-### Handleiding hWho
+### Handleiding herziene Who
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/hwho/)<br/>
 [Versie 0.1.0](https://vng-realisatie.github.io/publicatie/hl/hwho/0.1.0/) (In Ontwikkeling versie)
