@@ -2,19 +2,19 @@
 
 ## Handleidingen
 
-### Gebruik respec-template
+#### Gebruik respec-template
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/respec-template/)<br/>
 [Versie 0.2.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.2.0/) (In Ontwikkeling versie)
 
-### Handleiding herziene Who
+#### Handleiding herziene Who
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/hwho/)<br/>
 [Versie 0.9.0](https://vng-realisatie.github.io/publicatie/hl/hwho/0.9.0/) (In Ontwikkeling versie)
 
 ## VNG Realisatie standaarden
 
-### Metamodel BerichtstructuurGegevens (MBG)
+#### Metamodel BerichtstructuurGegevens (MBG)
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/cim/mbg)<br/>
 [Versie 1.0.0](https://vng-realisatie.github.io/publicatie/cim/mbg/1.0.0) (In Gebruik versie)<br/>
