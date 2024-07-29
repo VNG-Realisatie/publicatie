@@ -20,14 +20,16 @@ Voor het publiceren van alle Respec documenten in de GitHub repository 'publicat
 | cim | Het publicatie domein |
 | &nbsp;&nbsp;&nbsp;&nbsp;[project-mnemonic] | De afkorting van het project. 'Open Raadsinformatie' wordt bijv. afgekort als 'ori'. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x.x.x] | Het versienummer van het Respec document. Deze folder kan zich herhalen met steeds een ander versienummer. Komt minimaal 1x voor met als naam het huidige versienummer. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media | Folder waarin evt. illustratie bestanden zijn opgenomen |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media | Folder waarin evt. illustratie bestanden zijn opgenomen (optioneel). |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html | Gegenereerde statische html (snapshot.html) welke overeenkomt met de versie, hernoemd. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cim-[project-mnemonic]-[x.x.x].pdf | Gegenereerd pdf bestand welke overeenkomt met de versie. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media | Folder waarin evt. illustratie bestanden zijn opgenomen |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media | Folder waarin evt. illustratie bestanden zijn opgenomen (optioneel). |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html | Gegenereerde statische html (snapshot.html), welke overeenkomt met de huidige versie, hernoemd. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cim-[project-mnemonic]-[x.x.x].pdf | Gegenereerd pdf bestand welke overeenkomt met de huidige versie. |
 
 In dit overzicht vertegenwoordigd `x.x.x` het versienummer van het Respec document. De folder met die naam kan zich herhalen maar komt minimaal 1x voor, de huidige versie. De inhoud van die folder wordt dan eveneens geplaatst in de folder [project-mnemonic]. `project-mnemonic`.  Hieronder zie je een voorbeeld van deze structuur:
+
+![image](https://github.com/user-attachments/assets/fff462a1-7cb0-49d6-a389-0a6503a4ceb8)
 
 Tijdens het samenstellen van de inhoud van een nieuwe versie of een geheel nieuw Respec document kun je de structuur in de 'publicatie' repository al aanpassen.
 Betreft het de eerste versie van een Respec document creëer dan direct in de folder 'cim' een nieuwe folder die als naam de mnemonic van het project krijgt. Daarbinnen creëer je een versiefolder met als naam het versienummer waaronder je de eerste versie publiceert.
