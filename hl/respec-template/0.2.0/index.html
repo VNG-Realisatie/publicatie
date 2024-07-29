@@ -473,7 +473,7 @@ De versie van het te publiceren Respec document. Komt overeen met de Tagged Valu
 De voorgaande versie van het te publiceren Respec document. Komt overeen met de Tagged Value 'Version' in het Enterprise Architect bestand van het voorgaande versie van het model en heeft een waarde dat voldoet aan het formaat <code>x.x.x</code>, bijv. <code>2.0.0</code>. Deze is gedefinieerd in de document_config aangezien deze natuurlijk afhankelijk is van het te genereren Respec document. Wordt gebruikt in 'prevVersion'.</li>
 </ul>
 <p>Het consistent en nauwgezet invullen van de configuratie properties in de document_config is essentieel voor een goede werking van de links.</p>
-<p>De bovenstaande properties hebben invloed op de wijze waarop het eerste deel van de Respec documentatie wordt gegenereerd. Hieronder sommen we de regels op. Indien wordt besloten de properties 'latestVersion', 'thisVersion' en 'prevVersion' een andere inhoud te geven dan zullen onderstaande regels herzien moeten worden.</p>
+<p>De bovenstaande properties hebben invloed op de wijze waarop het eerste deel van de Respec documentatie wordt gegenereerd. Hieronder sommen we de regels op. Indien wordt besloten de properties 'latestVersion', 'thisVersion' en 'prevVersion' een andere inhoud te geven dan zullen onderstaande regels moeten worden herzien.</p>
 <ul>
 <li>Als de parameter 'specStatus' de waarde 'WV' heeft dan wordt de waarde van de parameter 'thisVersion' niet gebruikt voor het bepalen van 'Deze versie' maar wordt daar dezelfde waarde neergezet als bij 'Laatste werkversie'.</li>
 <li>Als de parameter 'specStatus' de waarde 'WV' heeft dan wordt de waarde van 'Subtitel 2' niet gebaseerd op de parameter 'publishDate' maar op de datum waarop de Respec documentatie door GitHub wordt gegenereerd.</li>
@@ -1068,10 +1068,10 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
     </tbody>
 </table></section></section>
   <section id="publ"><div class="header-wrapper"><h2 id="x4-publiceren-respec-documentatie-under-construction"><bdi class="secno">4. </bdi>Publiceren Respec documentatie (under construction)</h2><a class="self-link" href="#publ" aria-label="Permalink for Section 4."></a></div>
-<p>Het is de bedoeling dat het publiceren van de statische html en pdf geautomatiseerd gaat verlopen. Dat hebben we helaas nog niet op orde en om die reden doen we dit voorlopig handmatig.</p>
+<p>Het is de bedoeling dat het geautomatiseerd publiceren van de statische html en pdf wordt onderzocht. Vooralsnog blijven we dit handmatig doen.</p>
 <p>Het publiceren van Respec documentatie gebeurd niet vanuit de GitHub repository waarin deze wordt samengesteld en gegenereerd. 
 In die repository kan nl. slechts één versie van die Respec documentatie met GitHub Pages worden aangeboden terwijl we de mogelijkheid willen hebben alle voorgaande versies ook aan te bieden. Anders zouden de links in het eerst deel van de Respec documenten ook dood lopen.
-Om die reden wordt bij het genereren van Respec documentatie het bestanden 'snapshot.html' en een pdf bestand gegenereerd zodat we deze bestanden kunnen kopiëren naar de 'publicatie' repository vanwaaruit we alle Respec documentatie publiceren.</p>
+Om die reden wordt bij het genereren van Respec documentatie het bestand 'snapshot.html' en een pdf bestand gegenereerd zodat we deze bestanden kunnen kopiëren naar de 'publicatie' repository vanwaaruit we alle Respec documentatie publiceren.</p>
 <section id="inrichten-publicatie-repository"><div class="header-wrapper"><h3 id="x4-1-inrichten-publicatie-repository"><bdi class="secno">4.1 </bdi>Inrichten publicatie repository</h3><a class="self-link" href="#inrichten-publicatie-repository" aria-label="Permalink for Section 4.1"></a></div>
 <blockquote>
 <p><strong>LET OP!</strong><br>
@@ -1099,7 +1099,7 @@ De hieronder uitgewerkte structuur van de publicatie GitHub repository is slecht
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media</td>
-<td>Folder waarin evt. illustraties staan opgenomen</td>
+<td>Folder waarin evt. illustratie bestanden zijn opgenomen (optioneel).</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html</td>
@@ -1111,7 +1111,7 @@ De hieronder uitgewerkte structuur van de publicatie GitHub repository is slecht
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media</td>
-<td>Folder waarin evt. illustraties staan opgenomen</td>
+<td>Folder waarin evt. illustratie bestanden zijn opgenomen (optioneel).</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html</td>
@@ -1124,12 +1124,12 @@ De hieronder uitgewerkte structuur van de publicatie GitHub repository is slecht
 </tbody></table>
 <p>In dit overzicht vertegenwoordigd <code>x.x.x</code> het versienummer van het Respec document. De folder met die naam kan zich herhalen maar komt minimaal 1x voor, de huiidge versie. De inhoud van die folder wordt dan eveneens geplaatst in de folder [project-mnemonic]. <code>project-mnemonic</code> is  Hieronder zie je een voorbeeld van deze structuur:</p>
 <p><img src="./media/Folderstructuur.png" alt="Folderstructuur"></p>
-<p>Tijdens het samenstellen van de inhoud van een nieuwe versie van een bestaand of geheel nieuw Respec document kun je de structuur in de 'publicatie' repository al aanpassen.
+<p>Tijdens het samenstellen van de inhoud van een nieuwe versie of een geheel nieuw Respec document kun je de structuur in de 'publicatie' repository al aanpassen.
 Betreft het de eerste versie van een Respec document creëer dan direct in de folder 'cim' een nieuwe folder die als naam de mnemonic van het project krijgt. Daarbinnen creëer je een versiefolder met als naam het versienummer waaronder je de eerste versie publiceert.
-Bestaat de projectfolder al wel dan creëer in die folder een nieuwe versiefolder met als naam het versienummer waaronder je de nieuwe versie publiceert. In beide folders creëer je voorlopig een leeg 'index.html' bestand.</p>
+Bestaat de projectfolder al wel dan creëer je in die folder een nieuwe versiefolder met als naam het versienummer waaronder je de nieuwe versie publiceert. In beide folders creëer je voorlopig een leeg 'index.html' bestand.</p>
 </section><section id="publiceren-van-documenten"><div class="header-wrapper"><h3 id="x4-2-publiceren-van-documenten"><bdi class="secno">4.2 </bdi>Publiceren van documenten</h3><a class="self-link" href="#publiceren-van-documenten" aria-label="Permalink for Section 4.2"></a></div>
-<p>Na generatie kunnen de bestanden 'snapshot.html' en 'snapshot.pdf' vanuit de GitHub repository waarin ze gegenereerd zijn worden gekopieerd projectfolder en naar de naar de zojuist aangemaakte versiefolder in de 'publicatie' repository. 
-Het bestand 'index.html' verwijder je vervolgens in beide folders waarna je 'snapshot.html', eveneens in beide folder, hernoemt naar 'index.html'. Indien je in je Resoec documentatie images hebt geplaatst dan heb je die bestanden in de 'media' folder opgeslagen, kopieer in dat geval de 'media' folder eveneens naar beide folders.</p>
+<p>Na generatie kan het bestand 'snapshot.html' en het pdf bestand vanuit de GitHub repository waarin ze gegenereerd zijn worden gekopieerd naar de projectfolder en naar de naar de zojuist aangemaakte versiefolder in de 'publicatie' repository. 
+Het bestand 'index.html' verwijder je vervolgens in beide folders waarna je 'snapshot.html', eveneens in beide folder, hernoemt naar 'index.html'.</p>
 <p>Pas vervolgens in de root van de publicatie repository de 'index.md' aan zodat je toegang hebt tot alle Respec documentatie en de http links kunt kopiëren voor gebruik in andere GitHub Pages documentatie.</p>
 </section></section>
   <section id="probl"><div class="header-wrapper"><h2 id="x5-foutoplossing"><bdi class="secno">5. </bdi>Foutoplossing</h2><a class="self-link" href="#probl" aria-label="Permalink for Section 5."></a></div>
