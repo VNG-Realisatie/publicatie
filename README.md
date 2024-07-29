@@ -2,7 +2,7 @@
 
 **Let op!** Deze repository niet hernoemen. Dat veroorzaakt dode links.
 
-Er zal nog onderzocht worden of het publiceren van de statische html en pdf geautomatiseerd kan verlopen. Vooralsnog gebeurd het publiceren echter handmatig.
+Het is de bedoeling dat het geautomatiseerd publiceren van de statische html en pdf wordt onderzocht. Vooralsnog blijven we dit handmatig doen.
 
 Het publiceren van Respec documentatie gebeurd niet vanuit de GitHub repository waarin deze wordt samengesteld en gegenereerd. 
 In die repository kan nl. slechts één versie van die Respec documentatie met GitHub Pages worden aangeboden terwijl we de mogelijkheid willen hebben alle voorgaande versies ook aan te bieden. Anders zouden de links in het eerst deel van de Respec documenten ook dood lopen.
