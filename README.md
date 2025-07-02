@@ -1,3 +1,8 @@
+| Eigenaar | Ingevuld door |
+| --- | --- |
+| Kennis centrum Architectuur | Robert Melskens |
+<hr/>
+
 # Publiceren Respec documentatie (under construction)
 
 **Let op!** Deze repository niet hernoemen. Dat veroorzaakt dode links.
