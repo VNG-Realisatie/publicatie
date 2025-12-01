@@ -42,7 +42,7 @@ Bestaat de projectfolder al wel dan creëer je in die folder een nieuwe versiefo
 
 ### Publiceren van documenten
 
-Na generatie kan het bestand 'snapshot.html' en het pdf bestand vanuit de GitHub repository waarin ze gegenereerd zijn worden gekopieerd naar de projectfolder en naar de naar de zojuist aangemaakte versiefolder in de 'publicatie' repository. 
-Het bestand 'index.html' verwijder je vervolgens in beide folders waarna je 'snapshot.html', eveneens in beide folder, hernoemt naar 'index.html'.
+Na generatie kan het bestand 'snapshot.html' en het pdf bestand vanuit de GitHub repository waarin ze gegenereerd zijn worden gekopieerd naar de projectfolder en naar de zojuist aangemaakte versiefolder in de 'publicatie' repository. 
+Het bestand 'index.html' verwijder je vervolgens in beide folders waarna je 'snapshot.html', eveneens in beide folders, hernoemt naar 'index.html'.
 
 Pas vervolgens in de root van de publicatie repository de 'index.md' aan zodat je toegang hebt tot alle Respec documentatie en de http links kunt kopiëren voor gebruik in andere GitHub Pages documentatie.
