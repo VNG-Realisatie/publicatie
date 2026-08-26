@@ -5,12 +5,7 @@
 #### Gebruik respec-template
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/respec-template/)<br/>
-[Versie 0.3.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.3.0/) (In Ontwikkeling versie)
-
-#### Handleiding herziene Who
-
-[Huidige versie](https://vng-realisatie.github.io/publicatie/hl/hwho/)<br/>
-[Versie 0.9.0](https://vng-realisatie.github.io/publicatie/hl/hwho/0.9.0/) (In Ontwikkeling versie)
+[Versie 0.2.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.2.0/) (In Ontwikkeling versie)
 
 ## VNG Realisatie standaarden
 
@@ -27,4 +22,9 @@
 [Huidige versie](https://vng-realisatie.github.io/publicatie/cim/ori/)<br/>
 [Versie 2.0.0](https://vng-realisatie.github.io/publicatie/cim/ori/2.0.0/)<br/>
 [Versie 1.2.0](https://vng-realisatie.github.io/publicatie/cim/ori/1.2.0/) -->
+
+#### ImZTC
+
+[Huidige versie](https://vng-realisatie.github.io/publicatie/cim/imztc/)<br/>
+[Versie 2.0.0](https://vng-realisatie.github.io/publicatie/cim/imztc/2.2.0/) (In Ontwikkeling versie)
 
