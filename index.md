@@ -5,7 +5,7 @@
 #### Gebruik respec-template
 
 [Huidige versie](https://vng-realisatie.github.io/publicatie/hl/respec-template/)<br/>
-[Versie 0.2.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/0.2.0/) (In Ontwikkeling versie)
+[Versie 1.0.0](https://vng-realisatie.github.io/publicatie/hl/respec-template/1.0.0/) (In Gebruik versie)
 
 ## VNG Realisatie standaarden
 
