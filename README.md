@@ -3,9 +3,14 @@
 | Kennis centrum Architectuur | Robert Melskens |
 <hr/>
 
-# Publiceren Respec documentatie (under construction)
+<hr/>
 
-**Let op!** Deze repository niet hernoemen. Dat veroorzaakt dode links.
+# LET OP! Hernoem deze repository niet en verwijder deze repository ook niet, tenzij...
+
+Hernoeming van deze repository veroorzaakt dode links. Verwijdering leidt mogelijk ook tot dode links elders en verlies van historie van Respec documentatie.
+Verwijder dus alleen als je er 100% zeker van bent dat de hierin gepubliceerde Respec documentatie niet meer tot de allereerste gepubliceerde versie terug gevolgd moet kunnen worden, iets wat kenmerkend is voor Respec.
+
+# Publiceren Respec documentatie
 
 Het is de bedoeling dat het geautomatiseerd publiceren van de statische html en pdf wordt onderzocht. Vooralsnog blijven we dit handmatig doen.
 
