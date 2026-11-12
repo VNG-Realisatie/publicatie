@@ -28,3 +28,8 @@
 [Huidige versie](https://vng-realisatie.github.io/publicatie/cim/imztc/)<br/>
 [Versie 2.0.0](https://vng-realisatie.github.io/publicatie/cim/imztc/2.2.0/) (In Ontwikkeling versie)
 
+#### Conceptueel informatiemodel MijnTaken
+
+[Huidige versie](https://vng-realisatie.github.io/publicatie/cim/respec-cim-mijntaken/)<br/>
+[Versie 0.6.0](https://vng-realisatie.github.io/publicatie/cim/respec-cim-mijntaken/0.6.0/) (In Ontwikkeling versie)
+
